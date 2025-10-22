@@ -12,7 +12,6 @@ import sys
 sys.path.append("/home/sleyer/code/")
 import importlib
 from importlib import reload
-import plotting_code
 import read_data_advanced
 import matplotlib.dates as dates
 import os
