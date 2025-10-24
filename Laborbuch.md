@@ -8,7 +8,13 @@ node-wise timeline to easily find what you are looking for
 | 2024-12-03    | - back from workshop, installed Vaisala sensor (orginally assigned to node 5, plug deformed, but fixed) <br> - made disk image <br> - connected to Ethernet switch -> ip: 129.206.29.114 <br> - changed **password -> LAXnetwork241**   | 
 | 2024-12-04    | - opened node 1 (next to node 5), burned candle for ca 1 min @ 8:55 UTC <br> -continued measurement ~5 mins  until 9:25 UTC   | 
 | 2024-12-06    | - node 1 installed at the roof @12:00 UTC   | 
-| 2025-05-16| - interior check: disconnected 12:30 UTC <br> - Vaisala serial no. N3720018; single power sources, mount of chemical sensors broken <br> - reconnect 12:36 UTC
+| 2025-05-16| - interior check: disconnected 12:30 UTC <br> - Vaisala serial no. N3720018; single power sources, mount of chemical sensors broken <br> - reconnect 12:36 UTC |
+| 2025-07-29 | - installed wireguard <br> - tried changing password, but resets to LAXnetwork241 after each reboot <br> - noticed broken CO2-data since 2025-05-02 21:55:10 UTC <br> - unplugged from roof, taken to Lab 13:15 UTC |
+| 2025-07-30 | - re-fastened damaged Vaisala connector, works for now <br> - re-installed node 1 on roof 09:37 UTC |
+| 2025-08-06 | - changed **password -> CO2unicorn241** via temporary fix: <br> added *'beacon:CO2unicorn2401'|chpasswd* in /etc/rc.local <br> frshly sets the password during each boot |
+| 2025-10-15    | -  ethernet unplugged at 11:41 UTC (noise reduction experiments)  |
+| 2025-10-01 | - reconnected ethernet 11:30 UTC | 
+| 2025-10-22 | - unplugged 12:26 UTC for interior check <br> - re-mounted electrochemical sensor (glued mounting fell of) <br> - re-plugin 12:50 UTC |
 
 ## Node 2
 | Date | Remark |
@@ -87,6 +93,8 @@ node-wise timeline to easily find what you are looking for
 |2025-04-23 | - 12:30-13:00 UTC disconnected node 5 for checking settings <br> - 14:05 UTC reconnected node 5 - settings were ok |
 | 2025-05-16| - interior check: disconnected 12:22 UTC <br> - Vaisala serial no. N470003; two power sources, no bridged minus terminals <br> - reconnect 12:25 UTC |
 | 2025-06-12 | - disconnected node 5 09:49 UTC for return to vaisala (warranty checks for high temp-corssensitivity) |
+| 2025-09-02 | - reassembled returned vaisala sensor (N4740003) and installed at roof 11:36 UTC |
+| 2025-10-02 | - noticed missing data for nodes 5 and 17 between Sept 22 and Oct 2nd <br> reason: blown fuse of rooftop electricity supply box (already occured twice with this outlet a few months earlier, noted in fuse cabinet logbook)|
 
 ## Node 6
 | Date | Remark |
@@ -102,7 +110,8 @@ node-wise timeline to easily find what you are looking for
 | 2025-01-09    | - brought node 6-18 to workshop for refurbishment (power plug, ethernet feed-through, RPI isolation and mounting, power supply mounting, case grounding)   | 
 | 2025-07-08    | - installed Vaisalle sensor Ser.No. W3510002 <br> - power on 12:53 UTC, passwd -> **CO2unicorn2407** <br> - re-set time and date <br> - installed wireguard <br> - shutdown 14:01 UTC   | 
 | 2025-07-09    | - installed at roof 12:05 UTC   | 
-| Row 3    | Cell 8   | 
+| 2025-10-15    | -  ethernet unplugged at 11:36, re-plug 11:40 (noise reduction experiments)  | 
+| 2025-10-22 | - taken from roof to workshop (unplug 11:57 UTC) <br> - changed functional ground of power supplies (try to reduce noise) <br> - re-plugin on roof: 12:50 UTC |
 
 ## Node 8
 | Date | Remark |
@@ -110,7 +119,8 @@ node-wise timeline to easily find what you are looking for
 | 2025-01-09    | - brought node 6-18 to workshop for refurbishment (power plug, ethernet feed-through, RPI isolation and mounting, power supply mounting, case grounding)   | 
 | 2025-05-22    | - installed Vaisala sensor serial-no. W3530003 <br> - plug in 13:00 UTC, check Vaisala function and install wireguard <br> - change passwd -> **CO2unicorn2408** <br> - wireguard installation succesfull, had to re-set RPI and RTC time according to berkley manual <br> - unplug 14:17 UTC   | 
 | 2025-05-23    | - installation on roof @13:56 UTC   | 
-| Row 3    | Cell 8   | 
+| 2025-09-09 | - unplug 09:25 UTC for visit at Pumpwerk Sandhofen, not set-up yet |
+| 2025-10-02 | - installed at Pumpwerk Sandhofen 06:58 UTC |
 
 ## Node 9
 | Date | Remark |
@@ -120,6 +130,8 @@ node-wise timeline to easily find what you are looking for
 |2025-04-22 | - changed pwd to new scheme -> **CO2unicorn2409** | 
 | 2025-05-08 | - connected node 9 to monitor power with Jackery 13:45 UTC -> ~12 W <br> - Ralph to measure USB dongle|
 | 2025-05-19 | - setup wireguard in lab 09:15-09:55 UTC <br> - 11:15 installation on roof <br> - 11:25 start measurement|
+| 2025-07-21 | - unplugged node 9 12:03 UTC, installed mounting for Stadtbücherei |
+| 2025-08-13 | - installed node 9 at Stadtbücherei <br> - used SIM: card nr. 312452 1594 661 4 D* <br> - powered on 07:33 UTC |
 
 ## Node 10
 | Date | Remark |
@@ -151,6 +163,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-04-08    | - borught up nodes 9,12,13,16,18 <br> - configuration with connected minus terminals <br> - installed Vaisala sensors in nodes 9,12 and 13   | 
 | 2025-05-22 | - 09:40 UTC wireguard installation in lab <br> - changed passwd -> **CO2unicorn2412** <br> wireguard installation succesfull, unplugged 11:29 UTC| 
 | 2025-05-23    | - installation on roof @ 14:24 UTC   | 
+| 2025-09-18 | - unplug 11:08 UTC <br> - brought to Werkstatt for change to 24V supply |
 
 ## Node 13
 | Date | Remark |
@@ -159,6 +172,10 @@ node-wise timeline to easily find what you are looking for
 | 2025-04-08    | - borught up nodes 9,12,13,16,18 <br> - configuration with connected minus terminals <br> - installed Vaisala sensors in nodes 9,12 and 13   |  
 |2025-04-22 | - changed pwd to new scheme -> **CO2unicorn2413** | 
 | 2025-05-21    | - connected for wireguard installation 09:05-09:40 UTC <br> - started roof measurement 10:43 UTC   | 
+| 2025-09-02 | - unplug 08:52 UTC -> NRW campaign |
+| 2025-10-14 | - brought to R226 for CO-zero-measurement. power ~11:10 UTC |
+| 2025-10-22 | - started heating experiment via headlight 12:26 UTC |
+| 2025-10-23 | - stopped heating experiment 13:54 UTC <br> - node still running in R226 |
 
 ## Node 14
 | Date | Remark |
@@ -171,7 +188,8 @@ node-wise timeline to easily find what you are looking for
 |2025-04-23 | - connected to node 14 via Wifi router (Ralph) <br> - fixed crontab typo <br> -> couldn't connect via wireguard and stopped bc of rain |
 |2025-05-14 | - 15:00 UTC several reboots, setup wifi with phone hotspot <br> solution: <br> sudo systemctl enable wpa_supplicant@wlan0.service <br> sudo systemctl start wpa_supplicant@wlan0.service <br> systemctl status wpa_supplicant@wlan0.service <br> reboot |
 |2025-05-25 | - checked data: weather data & PM missing/strange since Jan 2025 <br> - 14:30 UTC reboot <br> - 15:15 UTC power off, start repairs, change USB port <br> - 15:19 UTC power on, weather data looks normal -> for calibration use neighboring node (1 or 10) data |
-| 2025-05-16| - disconnected 12:38 UTC for Seckenheim installation
+| 2025-05-16| - disconnected 12:38 UTC for Seckenheim installation |
+
 
 ## Node 15
 | Date | Remark |
@@ -179,28 +197,26 @@ node-wise timeline to easily find what you are looking for
 | 2025-01-09    | - brought node 6-18 to workshop for refurbishment (power plug, ethernet feed-through, RPI isolation and mounting, power supply mounting, case grounding)   | 
 | 2025-07-08 | - installed Vaisala sensor (Ser.No. W3520004), power on @14:11 UTC <br> - changed passwd -> **CO2unicorn2415** <br> - installed wireguard <br> - shutdown @14:57 UTC |
 | 2025-07-09    | - powered at roof 11:49 UTC   | 
-| Row 3    | Cell 8   | 
+
 
 ## Node 16
 | Date | Remark |
 |----------|----------|
 | 2025-01-09    | - brought node 6-18 to workshop for refurbishment (power plug, ethernet feed-through, RPI isolation and mounting, power supply mounting, case grounding)   | 
 | 2025-04-08    | - borught up nodes 9,12,13,16,18 <br> - configuration with connected minus terminals  |  
-| Row 2    | Cell 5   | 
-| Row 3    | Cell 8   | 
+| 2025-08-14 | - installed vaisala sensor No. W3530001 <br> - powered for setup 11:29 UTC <br> - changed **password -> CO2unicorn2416** (needed same fix as for node1 (set passwd during boot via rc.local)) <br> - time was freshly set <br> - installed wireguard <br> - power off 12:18 UTC |
+| 2025-09-02 | - brought to roof, plug-in 09:12 UTC |
 
 ## Node 17
 | Date | Remark |
 |----------|----------|
 | 2025-01-09    | - brought node 6-18 to workshop for refurbishment (power plug, ethernet feed-through, RPI isolation and mounting, power supply mounting, case grounding)   | 
-| Row 1    | Cell 2   | 
-| Row 2    | Cell 5   | 
-| Row 3    | Cell 8   | 
+| 2025-08-14 | - installed vaisala sensor no. W3510001 <br> - power on 12:28 UTC <br> - changed passwd -> **CO2unicorn2417**, needed temporary rc.local-fix to do that <br> - installed wireguard <br> - power off 13:16 UTC |
+| 2025-09-18 | - installed at roof 11:17 UTC |
+| 2025-10-02 | - noticed missing data for nodes 5 and 17 between Sept 22 and Oct 2nd <br> reason: blown fuse of rooftop electricity supply box (already occured twice with this outlet a few months earlier, noted in fuse cabinet logbook)|
 
 ## Node 18
 | Date | Remark |
 |----------|----------|
 | 2025-01-09    | - brought node 6-18 to workshop for refurbishment (power plug, ethernet feed-through, RPI isolation and mounting, power supply mounting, case grounding)   | 
 | 2025-04-08    | - borught up nodes 9,12,13,16,18 <br> - configuration with connected minus terminals  |   
-| Row 2    | Cell 5   | 
-| Row 3    | Cell 8   | 
