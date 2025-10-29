@@ -164,6 +164,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-05-22 | - 09:40 UTC wireguard installation in lab <br> - changed passwd -> **CO2unicorn2412** <br> wireguard installation succesfull, unplugged 11:29 UTC| 
 | 2025-05-23    | - installation on roof @ 14:24 UTC   | 
 | 2025-09-18 | - unplug 11:08 UTC <br> - brought to Werkstatt for change to 24V supply |
+| 2025-10-29 | - connected in lab for heating experiment v2 (control node) 13:15 UTC, LTE Stick |
 
 ## Node 13
 | Date | Remark |
@@ -176,6 +177,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-10-14 | - brought to R226 for CO-zero-measurement. power ~11:10 UTC |
 | 2025-10-22 | - started heating experiment via headlight 12:26 UTC |
 | 2025-10-23 | - stopped heating experiment 13:54 UTC <br> - node still running in R226 |
+| 2025-10-29 | - connected in lab for heating experiment v2 13:00 UTC , LAN|
 
 ## Node 14
 | Date | Remark |
@@ -197,6 +199,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-01-09    | - brought node 6-18 to workshop for refurbishment (power plug, ethernet feed-through, RPI isolation and mounting, power supply mounting, case grounding)   | 
 | 2025-07-08 | - installed Vaisala sensor (Ser.No. W3520004), power on @14:11 UTC <br> - changed passwd -> **CO2unicorn2415** <br> - installed wireguard <br> - shutdown @14:57 UTC |
 | 2025-07-09    | - powered at roof 11:49 UTC   | 
+| 2025-10-29 | - removed from roof 10:22 UTC |
 
 
 ## Node 16
@@ -206,6 +209,8 @@ node-wise timeline to easily find what you are looking for
 | 2025-04-08    | - borught up nodes 9,12,13,16,18 <br> - configuration with connected minus terminals  |  
 | 2025-08-14 | - installed vaisala sensor No. W3530001 <br> - powered for setup 11:29 UTC <br> - changed **password -> CO2unicorn2416** (needed same fix as for node1 (set passwd during boot via rc.local)) <br> - time was freshly set <br> - installed wireguard <br> - power off 12:18 UTC |
 | 2025-09-02 | - brought to roof, plug-in 09:12 UTC |
+| 2025-10-29 | - removed from roof 10:22 UTC |
+| 2025-10-29 | - connected in lab for heating experiment v2 (control node) 13:08 UTC , LAN|
 
 ## Node 17
 | Date | Remark |
