@@ -95,7 +95,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-06-12 | - disconnected node 5 09:49 UTC for return to vaisala (warranty checks for high temp-corssensitivity) |
 | 2025-09-02 | - reassembled returned vaisala sensor (N4740003) and installed at roof 11:36 UTC |
 | 2025-10-02 | - noticed missing data for nodes 5 and 17 between Sept 22 and Oct 2nd <br> reason: blown fuse of rooftop electricity supply box (already occured twice with this outlet a few months earlier, noted in fuse cabinet logbook)|
-| 2025-10-29 | - disabled Wi-Fi to see if there is an effect on noise, reboot 15:00 UTC | 
+| 2025-10-29 | - disabled Wi-Fi (via dtoverlay=disable_wifi entry in /boot/config.txt - comment out to re-activate) to see if there is an effect on noise, reboot 15:00 UTC | 
 
 ## Node 6
 | Date | Remark |
