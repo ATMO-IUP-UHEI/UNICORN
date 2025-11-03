@@ -74,6 +74,7 @@ node-wise timeline to easily find what you are looking for
 |2025-04-17 | - installed wireguard on nodes 3 and 4 <br> - 13:00 UTC installed node 4 at ITP/Philosophenweg with pipe clamp mounting from workshop <br> - no data connection yet |
 | 2025-05-26 | - exchanged power cord, unplug 15:17-15:24 UTC|
 | 2025-07-03 | - installed LTE, fixed Wireguard <br> - changed Password -> **CO2unicorn2404** <br> - power off 11:28-12:55 UTC |
+| 2025-11-03 | - added functional ground (negative terminal from both power supplies seperately to casing ground) <br> - unplugged between 14:17 and 14:37 UTC |
 
 
 
@@ -201,6 +202,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-07-08 | - installed Vaisala sensor (Ser.No. W3520004), power on @14:11 UTC <br> - changed passwd -> **CO2unicorn2415** <br> - installed wireguard <br> - shutdown @14:57 UTC |
 | 2025-07-09    | - powered at roof 11:49 UTC   | 
 | 2025-10-29 | - removed from roof 10:22 UTC |
+| 2025-11-03 | - setup for co-location at OPI (radiation effects, noise reduction tests) <br> - plug in 14:37 UTC |
 
 
 ## Node 16
