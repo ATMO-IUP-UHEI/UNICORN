@@ -167,6 +167,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-05-23    | - installation on roof @ 14:24 UTC   | 
 | 2025-09-18 | - unplug 11:08 UTC <br> - brought to Werkstatt for change to 24V supply |
 | 2025-10-29 | - connected in lab for heating experiment v2 (control node) 13:15 UTC, LTE Stick |
+| 2025-11-04 | - removed power supplies from casing, set up as temporary lab test with power supplies external, 1m away from node <br> - unplugged between 13:40 and 15:19 UTC |
 
 ## Node 13
 | Date | Remark |
