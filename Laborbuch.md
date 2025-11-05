@@ -168,6 +168,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-09-18 | - unplug 11:08 UTC <br> - brought to Werkstatt for change to 24V supply |
 | 2025-10-29 | - connected in lab for heating experiment v2 (control node) 13:15 UTC, LTE Stick |
 | 2025-11-04 | - removed power supplies from casing, set up as temporary lab test with power supplies external, 1m away from node <br> - unplugged between 13:40 and 15:19 UTC |
+| 2025-11-05 | - noticed less noise in trace gas sensors, however increased noise in CO2 <br> - tried removing the connection between the - terminals (possible inductive loop with vaisala USB connector) <br> - power off around 11:30 UTC |
 
 ## Node 13
 | Date | Remark |
