@@ -74,6 +74,7 @@ node-wise timeline to easily find what you are looking for
 |2025-04-17 | - installed wireguard on nodes 3 and 4 <br> - 13:00 UTC installed node 4 at ITP/Philosophenweg with pipe clamp mounting from workshop <br> - no data connection yet |
 | 2025-05-26 | - exchanged power cord, unplug 15:17-15:24 UTC|
 | 2025-07-03 | - installed LTE, fixed Wireguard <br> - changed Password -> **CO2unicorn2404** <br> - power off 11:28-12:55 UTC |
+| 2025-11-03 | - added functional ground (negative terminal from both power supplies seperately to casing ground) <br> - unplugged between 14:17 and 14:37 UTC |
 
 
 
@@ -95,6 +96,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-06-12 | - disconnected node 5 09:49 UTC for return to vaisala (warranty checks for high temp-corssensitivity) |
 | 2025-09-02 | - reassembled returned vaisala sensor (N4740003) and installed at roof 11:36 UTC |
 | 2025-10-02 | - noticed missing data for nodes 5 and 17 between Sept 22 and Oct 2nd <br> reason: blown fuse of rooftop electricity supply box (already occured twice with this outlet a few months earlier, noted in fuse cabinet logbook)|
+| 2025-10-29 | - disabled Wi-Fi (via dtoverlay=disable_wifi entry in /boot/config.txt - comment out to re-activate) to see if there is an effect on noise, reboot 15:00 UTC | 
 
 ## Node 6
 | Date | Remark |
@@ -164,7 +166,10 @@ node-wise timeline to easily find what you are looking for
 | 2025-05-22 | - 09:40 UTC wireguard installation in lab <br> - changed passwd -> **CO2unicorn2412** <br> wireguard installation succesfull, unplugged 11:29 UTC| 
 | 2025-05-23    | - installation on roof @ 14:24 UTC   | 
 | 2025-09-18 | - unplug 11:08 UTC <br> - brought to Werkstatt for change to 24V supply |
-
+| 2025-10-29 | - connected in lab for heating experiment v2 (control node) 13:15 UTC, LTE Stick |
+| 2025-11-04 | - removed power supplies from casing, set up as temporary lab test with power supplies external, 1m away from node <br> - unplugged between 13:40 and 15:19 UTC |
+| 2025-11-05 | - noticed less noise in trace gas sensors, however increased noise in CO2 <br> - tried removing the connection between the - terminals (possible inductive loop with vaisala USB connector) <br> - power off around 11:30 UTC |
+|2025-11-06 | - no change noticed, tried to reduce 12V cable length by re-connecting - terminals of power supply, - connector of vaisala on WAGO-Klemme with 5V - cables. <br> - unplugged from 13:10 to 13:20 UTC |
 ## Node 13
 | Date | Remark |
 |----------|----------|
@@ -176,6 +181,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-10-14 | - brought to R226 for CO-zero-measurement. power ~11:10 UTC |
 | 2025-10-22 | - started heating experiment via headlight 12:26 UTC |
 | 2025-10-23 | - stopped heating experiment 13:54 UTC <br> - node still running in R226 |
+| 2025-10-29 | - connected in lab for heating experiment v2 13:00 UTC , LAN|
 
 ## Node 14
 | Date | Remark |
@@ -197,6 +203,8 @@ node-wise timeline to easily find what you are looking for
 | 2025-01-09    | - brought node 6-18 to workshop for refurbishment (power plug, ethernet feed-through, RPI isolation and mounting, power supply mounting, case grounding)   | 
 | 2025-07-08 | - installed Vaisala sensor (Ser.No. W3520004), power on @14:11 UTC <br> - changed passwd -> **CO2unicorn2415** <br> - installed wireguard <br> - shutdown @14:57 UTC |
 | 2025-07-09    | - powered at roof 11:49 UTC   | 
+| 2025-10-29 | - removed from roof 10:22 UTC |
+| 2025-11-03 | - setup for co-location at OPI (radiation effects, noise reduction tests) <br> - plug in 14:37 UTC |
 
 
 ## Node 16
@@ -206,6 +214,8 @@ node-wise timeline to easily find what you are looking for
 | 2025-04-08    | - borught up nodes 9,12,13,16,18 <br> - configuration with connected minus terminals  |  
 | 2025-08-14 | - installed vaisala sensor No. W3530001 <br> - powered for setup 11:29 UTC <br> - changed **password -> CO2unicorn2416** (needed same fix as for node1 (set passwd during boot via rc.local)) <br> - time was freshly set <br> - installed wireguard <br> - power off 12:18 UTC |
 | 2025-09-02 | - brought to roof, plug-in 09:12 UTC |
+| 2025-10-29 | - removed from roof 10:22 UTC |
+| 2025-10-29 | - connected in lab for heating experiment v2 (control node) 13:08 UTC , LAN|
 
 ## Node 17
 | Date | Remark |
