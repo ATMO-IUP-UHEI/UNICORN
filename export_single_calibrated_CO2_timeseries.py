@@ -12,7 +12,6 @@ import sys
 sys.path.append("/home/sleyer/code/")
 import importlib
 from importlib import reload
-import plotting_code
 import read_data_advanced
 import matplotlib.dates as dates
 import os
@@ -21,20 +20,20 @@ import os
 #USER INPUT
 
 #Calibration Period
-start_time_fit=pd.to_datetime("2025-01-02 00:00:00")
-end_time_fit=pd.to_datetime("2025-02-01 00:00:00")
+start_time_fit=pd.to_datetime("2025-07-10 00:00:00")
+end_time_fit=pd.to_datetime("2025-09-12 00:00:00")
 #optional: set stop and restart time for gaps in calibration period
 stop_time_fit=pd.to_datetime("2125-02-05 00:00:00")
 restart_time_fit=pd.to_datetime('2005-02-25 00:00:00')
 
 #Period for Timeseries
-start_time_measurement=pd.to_datetime("2025-02-01 00:00:00")
-end_time_measurement=pd.to_datetime("2025-10-21 00:00:00")
+start_time_measurement=pd.to_datetime("2025-07-10 00:00:00")
+end_time_measurement=pd.to_datetime("2025-10-28 00:00:00")
 #optional: stop and restart time for a gap in evaluated data
 stop_time_measurement=pd.to_datetime("2125-05-25 00:00:00")
-restart_time_measurement=pd.to_datetime('2005-08-04 00:00:00')
+restart_time_measurement=pd.to_datetime('2005-10-28 00:00:00')
 
-node_nr = 1
+node_nr = 7
 location = 'IUP' #for file header
 rs_int='1min' #alt: '1h', '1min'
 
@@ -119,8 +118,8 @@ end_ind=np.argmin(np.abs(dates.date2num(end_time_fit)-dates.date2num(CO2_raw['ti
 
 def fit_multi_lin2(vars, a0, a1, a2, asquared, a3, drift, y):
     CO2_raw, p, T, rh, time = vars
-    return a0 * CO2_raw + (a1 * p + a2 * T + asquared*T**2 + a3 * rh + y)
-    #return a0 * CO2_raw + (a1 * p + a2 * T + asquared*T**2 + a3 * rh + drift*(time-time[0]) y)
+    #return a0 * CO2_raw + (a1 * p + a2 * T + asquared*T**2 + a3 * rh + y)
+    return a0 * CO2_raw + (a1 * p + a2 * T + asquared*T**2 + a3 * rh + drift*(time-time[0])+ y)
     
 vars = (CO2_raw, p, T, rh, time)
 vars_fit = (CO2_raw[start_ind:end_ind], p[start_ind:end_ind], T[start_ind:end_ind], rh[start_ind:end_ind], time[start_ind:end_ind])
@@ -290,8 +289,8 @@ data.attrs["readme"]= header
 data.to_netcdf('/home/sleyer/data/calibrated_data/unicorn'+str(node_nr)+'CO2_cal-rs'+str(rs_int)+'.cd')
 
 df=data.to_dataframe()
-df.to_csv('/home/sleyer/data/calibrated_data/unicorn'+str(node_nr)+'.csv')
-with open("/home/sleyer/data/calibrated_data/unicorn"+str(node_nr)+".csv", "r+") as f:
+df.to_csv('/home/sleyer/data/calibrated_data/unicorn'+str(node_nr)+'CO2_cal-rs'+str(rs_int)+'.csv')
+with open("/home/sleyer/data/calibrated_data/unicorn"+str(node_nr)+'CO2_cal-rs'+str(rs_int)+".csv", "r+") as f:
     content = f.read()
     f.seek(0, 0)
     f.write("\n".join(header) + "\n" + content)

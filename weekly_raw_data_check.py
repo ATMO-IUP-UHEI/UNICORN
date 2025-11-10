@@ -22,7 +22,7 @@ import os
 start_time = pd.to_datetime(dates.num2date(dates.date2num(pd.to_datetime(datetime.now().date()))-7-datetime.now().isoweekday()+1))
 end_time = pd.to_datetime(dates.num2date(dates.date2num(datetime.now().date())-datetime.now().isoweekday()+1))
 
-nodes_to_eval = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
+nodes_to_eval = [1,2,3,4,5,7,8,9,10,12,13,14,15,16,17]
 #nodes_to_eval=[1,2,4]
 rs_int='1min' #alt: '1h', '1min'
 
@@ -70,7 +70,13 @@ for i in nodes_to_eval:
                 
 raw_data_ds = xr.concat(raw_data, dim='node')
 #%%
-
+#for more robust code experimenting: temp save data to save on long read-in times
+df=raw_data_ds.to_dataframe()
+df.to_csv(plot_path+'data_temp.csv')
+#%%
+#if needed:read in pre-saved data
+#readin=pd.read_csv(plot_path+'data_temp.csv')
+#raw_data_ds = readin.set_index(['time', 'node']).to_xarray()
 
 # %%
 # Plot Temperature
@@ -259,7 +265,7 @@ for i in range(len(nodes_to_eval)):
     ds = raw_data_ds.isel(node=i)
     
     # z. B. Temperatur plotten
-    ds['O3'].plot(ax=ax, color='tab:blue', ylim=(0.3,0.37))
+    (ds['O3']-ds['O3_aux']).plot(ax=ax, color='tab:blue', ylim=(-0.05, 0.05))
     
     ax.set_title(f'Node {nodes_to_eval[i]}')
     ax.grid(True, alpha=0.3)
@@ -269,34 +275,10 @@ for j in range(len(axes)):
     if j+1 not in nodes_to_eval:
         fig.delaxes(axes[j])
 
-fig.suptitle("Sanitycheck raw O3 Week "+str(start_time)[:-15], fontsize=18)
+fig.suptitle("Sanitycheck raw O3 (working-aux) Week "+str(start_time)[:-15], fontsize=18)
 #plt.tight_layout()
 plt.savefig(plot_path+'O3.png')
-# %%
-# Plot O3_aux
-fig, axes = plt.subplots(6, 3, figsize=(22, 22), sharex=True, sharey=True)
-axes = axes.flatten()  # flache Liste für einfacheren Zugriff
 
-for i in range(len(nodes_to_eval)):
-    ax = axes[nodes_to_eval[i]-1]
-    
-     # Beispiel: Daten aus deinem Dictionary oder Dataset holen
-    ds = raw_data_ds.isel(node=i)
-    
-    # z. B. Temperatur plotten
-    ds['O3_aux'].plot(ax=ax, color='tab:blue', ylim=(0.28,0.38))
-    
-    ax.set_title(f'Node {nodes_to_eval[i]}')
-    ax.grid(True, alpha=0.3)
-
-# Leere Subplots ausblenden, wenn du weniger als 20 Plots hast
-for j in range(len(axes)):
-    if j+1 not in nodes_to_eval:
-        fig.delaxes(axes[j])
-
-fig.suptitle("Sanitycheck raw O3_aux Week "+str(start_time)[:-15], fontsize=18)
-#plt.tight_layout()
-plt.savefig(plot_path+'O3_aux.png')
 # %%
 # Plot CO
 fig, axes = plt.subplots(6, 3, figsize=(22, 22), sharex=True, sharey=True)
@@ -309,7 +291,7 @@ for i in range(len(nodes_to_eval)):
     ds = raw_data_ds.isel(node=i)
     
     # z. B. Temperatur plotten
-    ds['CO'].plot(ax=ax, color='tab:blue', ylim=(0.4,1))
+    (ds['CO']-ds['CO_aux']).plot(ax=ax, color='tab:blue', ylim=(0,0.5))
     
     ax.set_title(f'Node {nodes_to_eval[i]}')
     ax.grid(True, alpha=0.3)
@@ -319,35 +301,11 @@ for j in range(len(axes)):
     if j+1 not in nodes_to_eval:
         fig.delaxes(axes[j])
 
-fig.suptitle("Sanitycheck raw CO Week "+str(start_time)[:-15], fontsize=18)
+fig.suptitle("Sanitycheck raw CO (work-aux) Week "+str(start_time)[:-15], fontsize=18)
 #plt.tight_layout()
 plt.savefig(plot_path+'CO.png')
 # %%
-# Plot CO_aux
-fig, axes = plt.subplots(6, 3, figsize=(22, 22), sharex=True, sharey=True)
-axes = axes.flatten()  # flache Liste für einfacheren Zugriff
 
-for i in range(len(nodes_to_eval)):
-    ax = axes[nodes_to_eval[i]-1]
-    
-     # Beispiel: Daten aus deinem Dictionary oder Dataset holen
-    ds = raw_data_ds.isel(node=i)
-    
-    # z. B. Temperatur plotten
-    ds['CO_aux'].plot(ax=ax, color='tab:blue', ylim=(0.4,0.55))
-    
-    ax.set_title(f'Node {nodes_to_eval[i]}')
-    ax.grid(True, alpha=0.3)
-
-# Leere Subplots ausblenden, wenn du weniger als 20 Plots hast
-for j in range(len(axes)):
-    if j+1 not in nodes_to_eval:
-        fig.delaxes(axes[j])
-
-fig.suptitle("Sanitycheck raw CO_aux Week "+str(start_time)[:-15], fontsize=18)
-#plt.tight_layout()
-plt.savefig(plot_path+'CO_aux.png')
-# %%
 # Plot NO
 fig, axes = plt.subplots(6, 3, figsize=(22, 22), sharex=True, sharey=True)
 axes = axes.flatten()  # flache Liste für einfacheren Zugriff
@@ -359,7 +317,7 @@ for i in range(len(nodes_to_eval)):
     ds = raw_data_ds.isel(node=i)
     
     # z. B. Temperatur plotten
-    ds['NO'].plot(ax=ax, color='tab:blue')
+    (ds['NO']-ds['NO_aux']).plot(ax=ax, color='tab:blue', ylim=(-0.05, 0.15))
     
     ax.set_title(f'Node {nodes_to_eval[i]}')
     ax.grid(True, alpha=0.3)
@@ -373,31 +331,6 @@ fig.suptitle("Sanitycheck raw NO Week "+str(start_time)[:-15], fontsize=18)
 #plt.tight_layout()
 plt.savefig(plot_path+'NO.png')
 # %%
-# Plot NO
-fig, axes = plt.subplots(6, 3, figsize=(22, 22), sharex=True, sharey=True)
-axes = axes.flatten()  # flache Liste für einfacheren Zugriff
-
-for i in range(len(nodes_to_eval)):
-    ax = axes[nodes_to_eval[i]-1]
-    
-     # Beispiel: Daten aus deinem Dictionary oder Dataset holen
-    ds = raw_data_ds.isel(node=i)
-    
-    # z. B. Temperatur plotten
-    ds['NO_aux'].plot(ax=ax, color='tab:blue', ylim=(0.3,0.5))
-    
-    ax.set_title(f'Node {nodes_to_eval[i]}')
-    ax.grid(True, alpha=0.3)
-
-# Leere Subplots ausblenden, wenn du weniger als 20 Plots hast
-for j in range(len(axes)):
-    if j+1 not in nodes_to_eval:
-        fig.delaxes(axes[j])
-
-fig.suptitle("Sanitycheck raw NO_aux Week "+str(start_time)[:-15], fontsize=18)
-#plt.tight_layout()
-plt.savefig(plot_path+'NO_aux.png')
-# %%
 # Plot NO2
 fig, axes = plt.subplots(6, 3, figsize=(22, 22), sharex=True, sharey=True)
 axes = axes.flatten()  # flache Liste für einfacheren Zugriff
@@ -409,7 +342,7 @@ for i in range(len(nodes_to_eval)):
     ds = raw_data_ds.isel(node=i)
     
     # z. B. Temperatur plotten
-    ds['NO2'].plot(ax=ax, color='tab:blue', ylim=(0.25,0.40))
+    (ds['NO2']-ds['NO2_aux']).plot(ax=ax, color='tab:blue', ylim=(-0.03, 0.03))
     
     ax.set_title(f'Node {nodes_to_eval[i]}')
     ax.grid(True, alpha=0.3)
@@ -422,31 +355,6 @@ for j in range(len(axes)):
 fig.suptitle("Sanitycheck raw NO2 Week "+str(start_time)[:-15], fontsize=18)
 #plt.tight_layout()
 plt.savefig(plot_path+'NO2.png')
-# %%
-# Plot NO2_aux
-fig, axes = plt.subplots(6, 3, figsize=(22, 22), sharex=True, sharey=True)
-axes = axes.flatten()  # flache Liste für einfacheren Zugriff
-
-for i in range(len(nodes_to_eval)):
-    ax = axes[nodes_to_eval[i]-1]
-    
-     # Beispiel: Daten aus deinem Dictionary oder Dataset holen
-    ds = raw_data_ds.isel(node=i)
-    
-    # z. B. Temperatur plotten
-    ds['NO2_aux'].plot(ax=ax, color='tab:blue', ylim=(0.28,0.38))
-    
-    ax.set_title(f'Node {nodes_to_eval[i]}')
-    ax.grid(True, alpha=0.3)
-
-# Leere Subplots ausblenden, wenn du weniger als 20 Plots hast
-for j in range(len(axes)):
-    if j+1 not in nodes_to_eval:
-        fig.delaxes(axes[j])
-
-fig.suptitle("Sanitycheck raw NO2_aux Week "+str(start_time)[:-15], fontsize=18)
-#plt.tight_layout()
-plt.savefig(plot_path+'NO2_aux.png')
 # %%
 # Plot CO2
 fig, axes = plt.subplots(6, 3, figsize=(22, 22), sharex=True, sharey=True)
