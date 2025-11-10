@@ -170,6 +170,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-11-04 | - removed power supplies from casing, set up as temporary lab test with power supplies external, 1m away from node <br> - unplugged between 13:40 and 15:19 UTC |
 | 2025-11-05 | - noticed less noise in trace gas sensors, however increased noise in CO2 <br> - tried removing the connection between the - terminals (possible inductive loop with vaisala USB connector) <br> - power off around 11:30 UTC |
 |2025-11-06 | - no change noticed, tried to reduce 12V cable length by re-connecting - terminals of power supply, - connector of vaisala on WAGO-Klemme with 5V - cables. <br> - unplugged from 13:10 to 13:20 UTC |
+| 2025-11-10 | - next try in reducing noise: power supplies as close to the node casing as possible (short cables), wrapped supplies and node casing losely in aluminium foil <br> - unplugged between 14:30 and 14:50 UTC |
 ## Node 13
 | Date | Remark |
 |----------|----------|
