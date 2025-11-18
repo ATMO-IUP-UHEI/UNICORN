@@ -172,6 +172,7 @@ node-wise timeline to easily find what you are looking for
 |2025-11-06 | - no change noticed, tried to reduce 12V cable length by re-connecting - terminals of power supply, - connector of vaisala on WAGO-Klemme with 5V - cables. <br> - unplugged from 13:10 to 13:20 UTC |
 | 2025-11-10 | - next try in reducing noise: power supplies as close to the node casing as possible (short cables), wrapped supplies and node casing losely in aluminium foil <br> - unplugged between 14:30 and 14:50 UTC |
 | 2025-11-12 | - tried switching the supplies position to side of the sensor, away from openings <br> -down between 10:00 and 10:20 UTC |
+| 2025-11-18 | - noted strong increase in e-chem. sensor noise since Nov.13, 03:30 UTC <br> - no external explanation. Interior check: Fan by the em-sensors was not working. Worked again after re-connecting to e-chem. board. <br> running since 12:10 UTC | 
 ## Node 13
 | Date | Remark |
 |----------|----------|
