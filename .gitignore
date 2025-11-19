@@ -1,0 +1,9 @@
+# Ignoriere alle pyc-Dateien
+*.pyc
+
+# Ignoriere alle __pycache__-Ordner
+__pycache__/
+
+# Optional: andere temporäre Dateien
+*.log
+*.tmp
