@@ -14,7 +14,8 @@ node-wise timeline to easily find what you are looking for
 | 2025-08-06 | - changed **password -> CO2unicorn241** via temporary fix: <br> added *'beacon:CO2unicorn2401'|chpasswd* in /etc/rc.local <br> frshly sets the password during each boot |
 | 2025-10-15    | -  ethernet unplugged at 11:41 UTC (noise reduction experiments)  |
 | 2025-10-01 | - reconnected ethernet 11:30 UTC | 
-| 2025-10-22 | - unplugged 12:26 UTC for interior check <br> - re-mounted electrochemical sensor (glued mounting fell of) <br> - re-plugin 12:50 UTC |
+| 2025-10-22 | - unplugged 12:26 UTC for interior check <br> - re-mounted electrochemical sensor (glued mounting fell of) <br> - re-plugin 12:50 UTC |  
+| 2025-11-25 | - noticed noisy CO2 data since 2025-11-17 -> refastened Vaisala Connection <br> noticed also that e-chem. mounting losened again (improvised double sided tape, fixed temporary, should be re-done permanently with good tape <br> - power off between 12:00 and 12:07 UTC |
 
 ## Node 2
 | Date | Remark |
