@@ -175,7 +175,8 @@ node-wise timeline to easily find what you are looking for
 | 2025-11-12 | - tried switching the supplies position to side of the sensor, away from openings <br> -down between 10:00 and 10:20 UTC |
 | 2025-11-18 | - noted strong increase in e-chem. sensor noise since Nov.13, 03:30 UTC <br> - no external explanation. Interior check: Fan by the em-sensors was not working. Worked again after re-connecting to e-chem. board. <br> running since 12:10 UTC | 
 | 2025-11-19 | - installed Capacitors directly next to Vaisalla sensor <br> - test first with close power supplies at side of node. Later planned with longer cables to see if "antenna" effect is diminished <br> - shut off for installation 13:00-14:00 UTC |
-| 2025-11-20 | - changed to long-cable-setup to see if there is a positive effect of capacitors |
+| 2025-11-20 | - changed to long-cable-setup to see if there is a positive effect of capacitors |  
+| 2025-11-25 | - re-wired the problematic 5V fan directly to the power supply (not via echem-sensors) <br> - noticed loose connection directly at fan, needs replacement <br> - unplugged 14:45 to 15:25 UTC |
 ## Node 13
 | Date | Remark |
 |----------|----------|
