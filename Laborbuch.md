@@ -16,6 +16,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-10-01 | - reconnected ethernet 11:30 UTC | 
 | 2025-10-22 | - unplugged 12:26 UTC for interior check <br> - re-mounted electrochemical sensor (glued mounting fell of) <br> - re-plugin 12:50 UTC |  
 | 2025-11-25 | - noticed noisy CO2 data since 2025-11-17 -> refastened Vaisala Connection <br> noticed also that e-chem. mounting losened again (improvised double sided tape, fixed temporary, should be re-done permanently with good tape <br> - power off between 12:00 and 12:07 UTC |
+| 2025-12-02 | - noticed CO2 noise came back after one day <br> - re-fastened connector cautiosly as tight as possible with Wasserpumpenzange, works for now <br> - up and running since 07:50 UTC |
 
 ## Node 2
 | Date | Remark |
