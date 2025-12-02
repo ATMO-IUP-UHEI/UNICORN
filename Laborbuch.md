@@ -107,6 +107,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-06-04    | - installed vaisalla sensor (serial no. W3530002) <br> - powered for setup and wireguard @ 11:39 UTC <br> - changed passwd -> **CO2unicorn2406** <br> - plugged LTE stick with new Vodafone Sim (card nr. 30 2452 0094 383 3D) in -> wireguard works initially <br> - dis- and reconnected USB dongle -> connection persists   | 
 | 2025-06-16    | - disconnected node 6 @ 12:37 UTC for PoE testing   | 
 | 2025-06-18 | - powered node 6 @11:12 UTC for PoE testing <br> - remark: Vaisala sensor was shortly powered with wrong polarity, but seems unharmed | 
+| 2025-12-02 | - removed PoE-setup, put back on regular powering <br> - started roof colocation measurement 14:15 UTC |
 
 ## Node 7
 | Date | Remark |
@@ -239,3 +240,4 @@ node-wise timeline to easily find what you are looking for
 |----------|----------|
 | 2025-01-09    | - brought node 6-18 to workshop for refurbishment (power plug, ethernet feed-through, RPI isolation and mounting, power supply mounting, case grounding)   | 
 | 2025-04-08    | - borught up nodes 9,12,13,16,18 <br> - configuration with connected minus terminals  |   
+|2025-12-02 | Installed Vaisala Sensor with Ser.-No. W3510003 <br> - - changed **password -> CO2unicorn2418** via temporary fix: <br> added * echo 'beacon:CO2unicorn2418'|chpasswd* in /etc/rc.local <br> frshly sets the password during each boot <br> - succesfully installed wireguard <br> - started co-location measurement 14:15 UTC| 
