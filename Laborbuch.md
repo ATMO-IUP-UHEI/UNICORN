@@ -234,6 +234,8 @@ node-wise timeline to easily find what you are looking for
 | 2025-08-14 | - installed vaisala sensor no. W3510001 <br> - power on 12:28 UTC <br> - changed passwd -> **CO2unicorn2417**, needed temporary rc.local-fix to do that <br> - installed wireguard <br> - power off 13:16 UTC |
 | 2025-09-18 | - installed at roof 11:17 UTC |
 | 2025-10-02 | - noticed missing data for nodes 5 and 17 between Sept 22 and Oct 2nd <br> reason: blown fuse of rooftop electricity supply box (already occured twice with this outlet a few months earlier, noted in fuse cabinet logbook)|
+| 2025-12-09 | - removed node 17 from rooftop, unplug 14:00 UTC |
+| 2025-12-11 | - installed node 17 as interims solution on Kalmit weatherstation <br> - connection via LTE (SIM-Card 12L / 01731690315) <br> - plug in 10:37 UTC |
 
 ## Node 18
 | Date | Remark |
