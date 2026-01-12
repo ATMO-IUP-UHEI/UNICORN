@@ -192,6 +192,8 @@ node-wise timeline to easily find what you are looking for
 | 2025-10-22 | - started heating experiment via headlight 12:26 UTC |
 | 2025-10-23 | - stopped heating experiment 13:54 UTC <br> - node still running in R226 |
 | 2025-10-29 | - connected in lab for heating experiment v2 13:00 UTC , LAN|
+| 2026-01-12| - end of heating experiment, node brought back to R234|
+
 
 ## Node 14
 | Date | Remark |
@@ -226,6 +228,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-09-02 | - brought to roof, plug-in 09:12 UTC |
 | 2025-10-29 | - removed from roof 10:22 UTC |
 | 2025-10-29 | - connected in lab for heating experiment v2 (control node) 13:08 UTC , LAN|
+| 2026-01-12| - end of heating experiment, node brought back to R234|
 
 ## Node 17
 | Date | Remark |
