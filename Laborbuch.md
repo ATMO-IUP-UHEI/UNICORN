@@ -160,6 +160,8 @@ node-wise timeline to easily find what you are looking for
 | 2025-04-23 | - ~12:30 UTC connected node 11, started measurement |
 |2025-05-19 | - noticed problems (node not running) <br> - 11:30 disconnected <br> - 11:33 tried different outlets <br> - 11:35 restart measurement|
 | 2025-07-08 | - unplugged 07:35 UTC, installed at UB, yet without power connection (to be done by electrician) |
+| 2025-12-09 | - power connection established |
+
 
 ## Node 12
 | Date | Remark |
