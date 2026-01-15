@@ -182,6 +182,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-11-20 | - changed to long-cable-setup to see if there is a positive effect of capacitors |  
 | 2025-11-25 | - re-wired the problematic 5V fan directly to the power supply (not via echem-sensors) <br> - noticed loose connection directly at fan, needs replacement <br> - unplugged 14:45 to 15:25 UTC |
 | 2025-11-26 | - closer fan examination with oscilloscope to see noise-producing RF impulses, <br> - node off/open between 11:30 UTC and 14:00 UTC | 
+| 2025-01-13 | - test noise in voltage signal produced by fans, also different (higher-quality) fan models <br> - comperable results through all fan models: 15-25 mV Peak-to-Peak ripples on top of constant 5/12V-Voltage, every 1.5 to 3ms (depending on rotational speed) <br> - added parallel condensators (80 muF+100 nF ceramic condensators), similar to sensor-stabilzation setup from Nov. 19 -> no effect <br> - additionally added a 10 Ohm resistance in series in the +-connection-line -> Reduced current and fan speed by ~20%, but also Ripples are reduced to 3-5 mV |
 ## Node 13
 | Date | Remark |
 |----------|----------|
@@ -194,7 +195,13 @@ node-wise timeline to easily find what you are looking for
 | 2025-10-22 | - started heating experiment via headlight 12:26 UTC |
 | 2025-10-23 | - stopped heating experiment 13:54 UTC <br> - node still running in R226 |
 | 2025-10-29 | - connected in lab for heating experiment v2 13:00 UTC , LAN|
+| 2025-11-03 | - unplug node 13 & 16, 14:15 UTC |
+| 2025-11-05 | - plug in nodes 13 & 16 for further temperature experiments, 09:25 UTC |
+| 2025-11-17 | - added periodic on/off clock (T=3h) to the node to examine behaviour when power is cut/ re- stabilized <br> - Experiment started 08:55 UTC |
+| 2025-11-18 | - stopped on/off experiment, unplg 13:51 UTC <br> - started new heating experiment, heating intervals 12h, start 13:53 UTC |
+| 2025-12-19 | - stopped heating experiment, headlight turned off |
 | 2026-01-12| - end of heating experiment, node brought back to R234|
+
 
 
 ## Node 14
@@ -230,6 +237,8 @@ node-wise timeline to easily find what you are looking for
 | 2025-09-02 | - brought to roof, plug-in 09:12 UTC |
 | 2025-10-29 | - removed from roof 10:22 UTC |
 | 2025-10-29 | - connected in lab for heating experiment v2 (control node) 13:08 UTC , LAN|
+| 2025-11-03 | - unplug node 13 & 16, 14:15 UTC |
+| 2025-11-05 | - plug in nodes 13 & 16 for further temperature experiments, 09:25 UTC |
 | 2026-01-12| - end of heating experiment, node brought back to R234|
 
 ## Node 17
