@@ -137,6 +137,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-05-19 | - setup wireguard in lab 09:15-09:55 UTC <br> - 11:15 installation on roof <br> - 11:25 start measurement|
 | 2025-07-21 | - unplugged node 9 12:03 UTC, installed mounting for Stadtbücherei |
 | 2025-08-13 | - installed node 9 at Stadtbücherei <br> - used SIM: card nr. 312452 1594 661 4 D* <br> - powered on 07:33 UTC |
+| 2025-01-14 | - we were notified, that the FI (safety fuse) on the Stadtbücherei Roof station was blown on January 08 <br> - de-installed node 09 on January 14th for an internal inspection <br> - result: node is flawless, issue most probably the outdoor power socket at Stadtbücherei (not 100% waterproof if cable is connected). |
 
 ## Node 10
 | Date | Remark |
