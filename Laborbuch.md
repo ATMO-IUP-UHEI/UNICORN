@@ -77,7 +77,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-05-26 | - exchanged power cord, unplug 15:17-15:24 UTC|
 | 2025-07-03 | - installed LTE, fixed Wireguard <br> - changed Password -> **CO2unicorn2404** <br> - power off 11:28-12:55 UTC |
 | 2025-11-03 | - added functional ground (negative terminal from both power supplies seperately to casing ground) <br> - unplugged between 14:17 and 14:37 UTC |
-| 2026-01-21 | - Examining data usage (13 MB upload every hour) - suspect inefficient synchronising with Berkley <br> - suspected culprit: minutely executed rsync process in 'crontab -e' (no sudo, local beacon user) -> commented out to see effect | 
+| 2026-01-21 | - Examining data usage (13 MB upload every hour) - suspect inefficient synchronising with Berkley <br> - suspected culprit: minutely executed rsync process in 'crontab -e' (no sudo, local beacon user) -> commented out to see effect <br> - data usage was reduced to 0.03 MB/ hr <br> - set rsync to only run once an hour | 
 
 
 
@@ -127,7 +127,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-05-23    | - installation on roof @13:56 UTC   | 
 | 2025-09-09 | - unplug 09:25 UTC for visit at Pumpwerk Sandhofen, not set-up yet |
 | 2025-10-02 | - installed at Pumpwerk Sandhofen 06:58 UTC |
-| 2026-01-21 | - upload data usage examination: commented out minutely rsinc process to berkley in crontab -e (beacon user, not sudo) <br> - before change: 8MB/hr upload |
+| 2026-01-21 | - upload data usage examination: commented out minutely rsinc process to berkley in crontab -e (beacon user, not sudo) <br> - before change: 8MB/hr upload <br> - data usage was reduced to 0.03 MB/ hr <br> - set rsync to only run once an hour | 
 
 ## Node 9
 | Date | Remark |
