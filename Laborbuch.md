@@ -77,6 +77,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-05-26 | - exchanged power cord, unplug 15:17-15:24 UTC|
 | 2025-07-03 | - installed LTE, fixed Wireguard <br> - changed Password -> **CO2unicorn2404** <br> - power off 11:28-12:55 UTC |
 | 2025-11-03 | - added functional ground (negative terminal from both power supplies seperately to casing ground) <br> - unplugged between 14:17 and 14:37 UTC |
+| 2026-01-21 | - Examining data usage (13 MB upload every hour) - suspect inefficient synchronising with Berkley <br> - suspected culprit: minutely executed rsync process in 'crontab -e' (no sudo, local beacon user) -> commented out to see effect | 
 
 
 
