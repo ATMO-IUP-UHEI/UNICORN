@@ -127,6 +127,7 @@ node-wise timeline to easily find what you are looking for
 | 2025-05-23    | - installation on roof @13:56 UTC   | 
 | 2025-09-09 | - unplug 09:25 UTC for visit at Pumpwerk Sandhofen, not set-up yet |
 | 2025-10-02 | - installed at Pumpwerk Sandhofen 06:58 UTC |
+| 2026-01-21 | - upload data usage examination: commented out minutely rsinc process to berkley in crontab -e (beacon user, not sudo) <br> - before change: 8MB/hr upload |
 
 ## Node 9
 | Date | Remark |
