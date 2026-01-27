@@ -1,6 +1,41 @@
-# Laborbuch für Unicorn-Nodes
+# Labbook for UNICORN nodes
 
-node-wise timeline to easily find what you are looking for
+## Rolling timeline
+CA = calibrating; OP = Operational; LAB = laboratory
+
+| Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
+|------------|--------|------------|--------------|------------------------|---------|
+| Node 09    | CA     | 2026-01-22 |              | IUP(roof)              |         |
+| Node 16    | CA     | 2026-01-22 |              | IUP(roof)              |         |
+| Node 17    | OP     | 2025-12-12 |              | Kalmit                 |         |
+| Node 11    | OP     | 2025-12-10 |              | Universitätsbibliothek |         |
+| Node 06    | CA     | 2025-12-03 |              | IUP(roof)              |         |
+| Node 15    | OP     | 2025-11-04 |              | Philosophenweg         |         |
+| Node 16    | LAB    | 2025-10-29 | 2026-01-12   | IUP(lab)               |         |
+| Node 08    | OP     | 2025-10-03 |              | Pumpwerk Sandhofen     |         |
+| Node 17    | CA     | 2025-09-19 | 2025-12-08   | IUP(roof)              |         |
+| Node 12    | LAB    | 2025-09-17 |              | IUP(lab)               |         |
+| Node 13    | LAB    | 2025-09-12 |              | IUP(lab)               |         |
+| Node 09    | OP     | 2025-08-14 | 2026-01-14   | Stadtbücherei          |         |
+| Node 07    | CA     | 2025-07-10 |              | IUP(roof)              |         |
+| Node 15    | CA     | 2025-07-09 | 2025-10-28   | IUP(roof)              |         |
+| Node 10    | OP     | 2025-06-21 |              | Collegium Academicum   |         |
+| Node 14    | OP     | 2025-05-25 |              | Seckenheim             |         |
+| Node 12    | CA     | 2025-05-24 | 2025-09-17   | IUP(roof)              |         |
+| Node 08    | CA     | 2025-05-24 | 2025-09-08   | IUP(roof)              |         |
+| Node 13    | CA     | 2025-05-22 | 2025-09-02   | IUP(roof)              |         |
+| Node 11    | CA     | 2025-05-20 | 2025-06-24   | IUP(roof)              |         |
+| Node 09    | CA     | 2025-05-19 | 2025-07-20   | IUP(roof)              |         |
+| Node 03    | OP     | 2025-04-18 |              | Eppelheim              |         |
+| Node 04    | OP     | 2025-04-18 |              | Philosophenweg         |         |
+| Node 10    | CA     | 2025-04-10 | 2025-06-19   | IUP(roof)              |         |
+| Node 14    | CA     | 2025-04-10 | 2025-05-15   | IUP(roof)              |         |
+| Node 18    | CA     | 2025-04-09 |              | IUP(roof)              |         |
+| Node 02    | OP     | 2025-02-19 |              | Czernyring             |         |
+| Node 03    | CA     | 2025-02-19 | 2025-04-08   | IUP(roof)              |         |
+| Node 04    | CA     | 2025-02-06 | 2025-04-08   | IUP(roof)              |         |
+| Node 01    | CA     | 2024-12-06 |              | IUP(roof)              |         |
+| Node 02    | CA     | 2024-12-05 | 2025-02-11   | IUP(roof)              |         |
 
 ## Node 1
 | Date | Remark |
