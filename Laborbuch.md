@@ -241,7 +241,8 @@ CA = calibrating; OP = Operational; LAB = laboratory
 | 2025-11-17 | - added periodic on/off clock (T=3h) to the node to examine behaviour when power is cut/ re- stabilized <br> - Experiment started 08:55 UTC |
 | 2025-11-18 | - stopped on/off experiment, unplg 13:51 UTC <br> - started new heating experiment, heating intervals 12h, start 13:53 UTC |
 | 2025-12-19 | - stopped heating experiment, headlight turned off |
-| 2026-01-12| - end of heating experiment, node brought back to R234|
+| 2026-01-12| - end of heating experiment, node brought back to R234| 
+| 2026-01-21 | - started roof measurement, 15:00 UTC |
 
 
 
