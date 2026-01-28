@@ -152,7 +152,9 @@ CA = calibrating; OP = Operational; LAB = laboratory
 | 2025-07-08    | - installed Vaisalle sensor Ser.No. W3510002 <br> - power on 12:53 UTC, passwd -> **CO2unicorn2407** <br> - re-set time and date <br> - installed wireguard <br> - shutdown 14:01 UTC   | 
 | 2025-07-09    | - installed at roof 12:05 UTC   | 
 | 2025-10-15    | -  ethernet unplugged at 11:36, re-plug 11:40 (noise reduction experiments)  | 
-| 2025-10-22 | - taken from roof to workshop (unplug 11:57 UTC) <br> - changed functional ground of power supplies (try to reduce noise) <br> - re-plugin on roof: 12:50 UTC |
+| 2025-10-22 | - taken from roof to workshop (unplug 11:57 UTC) <br> - changed functional ground of power supplies (try to reduce noise) <br> - re-plugin on roof: 12:50 UTC |  
+| 2025-01-21 | - taken down from roof 12:30 UTC for deployment |
+| 2025-01-22 | - deployed at Stadkämmerei Mannheim (Schirmständer)<br> - no electricity yet, no acces to the "Sicherungskasten", schould be taken care of by Mr. Riffel |
 
 ## Node 8
 | Date | Remark |
