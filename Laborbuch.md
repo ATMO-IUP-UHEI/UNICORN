@@ -229,6 +229,7 @@ CA = calibrating; OP = Operational; LAB = laboratory
 | 2025-11-25 | - re-wired the problematic 5V fan directly to the power supply (not via echem-sensors) <br> - noticed loose connection directly at fan, needs replacement <br> - unplugged 14:45 to 15:25 UTC |
 | 2025-11-26 | - closer fan examination with oscilloscope to see noise-producing RF impulses, <br> - node off/open between 11:30 UTC and 14:00 UTC | 
 | 2025-01-13 | - test noise in voltage signal produced by fans, also different (higher-quality) fan models <br> - comperable results through all fan models: 15-25 mV Peak-to-Peak ripples on top of constant 5/12V-Voltage, every 1.5 to 3ms (depending on rotational speed) <br> - added parallel condensators (80 muF+100 nF ceramic condensators), similar to sensor-stabilzation setup from Nov. 19 -> no effect <br> - additionally added a 10 Ohm resistance in series in the +-connection-line -> Reduced current and fan speed by ~20%, but also Ripples are reduced to 3-5 mV |
+| 2026-02-04 | - disabled Wifi and Bluetooth, reboot 10:30 UTC |
 ## Node 13
 | Date | Remark |
 |----------|----------|
