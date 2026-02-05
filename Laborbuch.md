@@ -228,8 +228,11 @@ CA = calibrating; OP = Operational; LAB = laboratory
 | 2025-11-20 | - changed to long-cable-setup to see if there is a positive effect of capacitors |  
 | 2025-11-25 | - re-wired the problematic 5V fan directly to the power supply (not via echem-sensors) <br> - noticed loose connection directly at fan, needs replacement <br> - unplugged 14:45 to 15:25 UTC |
 | 2025-11-26 | - closer fan examination with oscilloscope to see noise-producing RF impulses, <br> - node off/open between 11:30 UTC and 14:00 UTC | 
-| 2025-01-13 | - test noise in voltage signal produced by fans, also different (higher-quality) fan models <br> - comperable results through all fan models: 15-25 mV Peak-to-Peak ripples on top of constant 5/12V-Voltage, every 1.5 to 3ms (depending on rotational speed) <br> - added parallel condensators (80 muF+100 nF ceramic condensators), similar to sensor-stabilzation setup from Nov. 19 -> no effect <br> - additionally added a 10 Ohm resistance in series in the +-connection-line -> Reduced current and fan speed by ~20%, but also Ripples are reduced to 3-5 mV |
-| 2026-02-04 | - disabled Wifi and Bluetooth, reboot 10:30 UTC |
+| 2026-01-13 | - test noise in voltage signal produced by fans, also different (higher-quality) fan models <br> - comperable results through all fan models: 15-25 mV Peak-to-Peak ripples on top of constant 5/12V-Voltage, every 1.5 to 3ms (depending on rotational speed) <br> - added parallel condensators (80 muF+100 nF ceramic condensators), similar to sensor-stabilzation setup from Nov. 19 -> no effect <br> - additionally added a 10 Ohm resistance in series in the +-connection-line -> Reduced current and fan speed by ~20%, but also Ripples are reduced to 3-5 mV |
+| 2026-01-20 | - measured remaining voltage at fan (reduced by resistance): 4.02V <br> - "stalling voltage": short drop to 3.77V, then 5V if stationary <br> -> All within manufacturer specifications (2.5 to 6V, also starting voltage of 2.5V) |
+| 2026-02-02 | - restarted node 12 around 15:00 UTC (because it was temporarily unaccesible) <br> - insulated Raspberry Pi from enclosure by using plastic covers from power supplies <br> - restart of Rasppberry Pi <br> - adjusting LTE Antenna |
+| 2026-02-04 | - saw drastic noise increase since 2026-02-02 15:00 UTC, disabled Wifi and Bluetooth (via dtoverlay=disable_wifi and dtoverly=disable-bt in /boot/config.txt) and removed the external Antenna, reboot 10:20 UTC <br> - seems like this solved the problem |
+
 ## Node 13
 | Date | Remark |
 |----------|----------|
