@@ -1,13 +1,13 @@
 # Labbook for UNICORN nodes
 
 ## Rolling timeline
-CA = calibrating; OP = Operational; LAB = laboratory
+CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
 | Node 09    | CA     | 2026-01-22 |              | IUP(roof)              |         |
 | Node 16    | CA     | 2026-01-22 |              | IUP(roof)              |         |
-| Node 07    | OP     | 2026-01-22 |              | Stadtkämmerei Mannheim | yet without power|
+| Node 07    | OP     | 2026-02-12 |              | Stadtkämmerei Mannheim |         |
 | Node 13    | CA     | 2026-01-22 |              | IUP(roof)              |         |
 | Node 17    | OP     | 2025-12-12 |              | Kalmit                 |         |
 | Node 11    | OP     | 2025-12-10 |              | Universitätsbibliothek |         |
