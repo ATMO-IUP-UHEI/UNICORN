@@ -232,6 +232,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2026-01-20 | - measured remaining voltage at fan (reduced by resistance): 4.02V <br> - "stalling voltage": short drop to 3.77V, then 5V if stationary <br> -> All within manufacturer specifications (2.5 to 6V, also starting voltage of 2.5V) |
 | 2026-02-02 | - restarted node 12 around 15:00 UTC (because it was temporarily unaccesible) <br> - insulated Raspberry Pi from enclosure by using plastic covers from power supplies <br> - restart of Rasppberry Pi <br> - adjusting LTE Antenna |
 | 2026-02-04 | - saw drastic noise increase since 2026-02-02 15:00 UTC, disabled Wifi and Bluetooth (via dtoverlay=disable_wifi and dtoverly=disable-bt in /boot/config.txt) and removed the external Antenna, reboot 10:20 UTC <br> - seems like this solved the problem |
+| 2026-02-18 | - finalized electonics setup, brought to roof, running since 13:10 UTC |
 
 ## Node 13
 | Date | Remark |
