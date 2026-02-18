@@ -5,6 +5,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
+| Node 12    | CA     | 2026-02-18 | 2026-03-18   | IUP (roof)             | 24 V Setup with Brick in roof outlet |
 | Node 09    | CA     | 2026-01-22 |              | IUP(roof)              |         |
 | Node 16    | CA     | 2026-01-22 |              | IUP(roof)              |         |
 | Node 07    | OP     | 2026-02-12 |              | Stadtkämmerei Mannheim |         |
