@@ -5,6 +5,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
+| Node 04    | CA     | 2026-02-25 | 2026-03-25   | IUP (roof)             | return from Philosophenweg for re-calibration |
 | Node 12    | CA     | 2026-02-18 | 2026-03-18   | IUP (roof)             | 24 V Setup with Brick in roof outlet |
 | Node 09    | CA     | 2026-01-22 |              | IUP(roof)              |         |
 | Node 16    | CA     | 2026-01-22 |              | IUP(roof)              |         |
@@ -33,7 +34,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | Node 09    | CA     | 2025-05-20 | 2025-07-20   | IUP(roof)              |         |
 | Node 11    | CA     | 2025-04-24 | 2025-07-07   | IUP(roof)              |         |
 | Node 03    | OP     | 2025-04-18 |              | Eppelheim              |         |
-| Node 04    | OP     | 2025-04-18 |              | Philosophenweg         |         |
+| Node 04    | OP     | 2025-04-18 | 2026-02-25   | Philosophenweg         |         |
 | Node 10    | CA     | 2025-04-10 | 2025-06-19   | IUP(roof)              |         |
 | Node 14    | CA     | 2025-04-10 | 2025-05-15   | IUP(roof)              |         |
 | Node 05    | CA     | 2025-02-19 | 2025-06-11   | IUP (roof)             | strong Co2-crosssensitivities, CO2-sensor was sent in to Vaisala |
@@ -119,6 +120,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-07-03 | - installed LTE, fixed Wireguard <br> - changed Password -> **CO2unicorn2404** <br> - power off 11:28-12:55 UTC |
 | 2025-11-03 | - added functional ground (negative terminal from both power supplies seperately to casing ground) <br> - unplugged between 14:17 and 14:37 UTC |
 | 2026-01-21 | - Examining data usage (13 MB upload every hour) - suspect inefficient synchronising with Berkley <br> - suspected culprit: minutely executed rsync process in 'crontab -e' (no sudo, local beacon user) -> commented out to see effect <br> - data usage was reduced to 0.03 MB/ hr <br> - set rsync to only run once an hour | 
+| 2026-02-18 | - returned node 04 from Philosophenweg to IUP roof, power off 13:09 UTC <br> installed at roof: approx 14:20 UTC <br> - notes on Philosophenweg mounting/cable: cable length approx 15m, 2 unused sockets available, mounting with 48-51mm Rohrschelle (Phillips-Head Screwdriver for Rohrschelle, Imbus if Rohrschellenhalterung needs to be removed |
 
 
 
@@ -279,6 +281,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-07-09    | - powered at roof 11:49 UTC   | 
 | 2025-10-29 | - removed from roof 10:22 UTC |
 | 2025-11-03 | - setup for co-location at OPI (radiation effects, noise reduction tests) <br> - plug in 14:37 UTC |
+| 2026-02-25 | - switched with node 4 to stay at Philosophenweg while node 4 is re-calibrated, short power off between 13:09 and 13:33 UTC <br> - notes on Philosophenweg mounting/cable: cable length approx 15m, 2 unused sockets available, mounting with 48-51mm Rohrschelle (Phillips-Head Screwdriver for Rohrschelle, Imbus if Rohrschellenhalterung needs to be removed | 
 
 
 ## Node 16
