@@ -59,6 +59,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-10-22 | - unplugged 12:26 UTC for interior check <br> - re-mounted electrochemical sensor (glued mounting fell of) <br> - re-plugin 12:50 UTC |  
 | 2025-11-25 | - noticed noisy CO2 data since 2025-11-17 -> refastened Vaisala Connection <br> noticed also that e-chem. mounting losened again (improvised double sided tape, fixed temporary, should be re-done permanently with good tape <br> - power off between 12:00 and 12:07 UTC |
 | 2025-12-02 | - noticed CO2 noise came back after one day <br> - re-fastened connector cautiosly as tight as possible with Wasserpumpenzange, works for now <br> - up and running since 07:50 UTC |
+| 2026-02-25 | - removed ethernet connection, connected to LTE WLAN Router on roof (details in/etc/wpa_supplicant/wpa_cupplicant.conf) <br> - implemented a wireguard monitoring script that documents time since last handshake and restarts wireguard if necessary (problem arised with the LTE Router and NAT-Timeouts that didn't recognise wireguard as traffic) <br> - reduced berkley rsinc interval to once/day to limit data traffic and activated a data usage documentation script that documents hourly up- and download traffic | 
 
 ## Node 2
 | Date | Remark |
@@ -143,6 +144,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-09-02 | - reassembled returned vaisala sensor (N4740003) and installed at roof 11:36 UTC |
 | 2025-10-02 | - noticed missing data for nodes 5 and 17 between Sept 22 and Oct 2nd <br> reason: blown fuse of rooftop electricity supply box (already occured twice with this outlet a few months earlier, noted in fuse cabinet logbook)|
 | 2025-10-29 | - disabled Wi-Fi (via dtoverlay=disable_wifi entry in /boot/config.txt - comment out to re-activate) to see if there is an effect on noise, reboot 15:00 UTC | 
+| 2026-02-25 | - re-activated wifi for roof measurements, didn't seem to have a strong noise impact <br> - removed ethernet connection, connected to LTE WLAN Router on roof (details in/etc/wpa_supplicant/wpa_cupplicant.conf) <br> - implemented a wireguard monitoring script that documents time since last handshake and restarts wireguard if necessary (problem arised with the LTE Router and NAT-Timeouts that didn't recognise wireguard as traffic) <br> - reduced berkley rsinc interval to once/day to limit data traffic and activated a data usage documentation script that documents hourly up- and download traffic |
 
 ## Node 6
 | Date | Remark |
@@ -152,6 +154,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-06-16    | - disconnected node 6 @ 12:37 UTC for PoE testing   | 
 | 2025-06-18 | - powered node 6 @11:12 UTC for PoE testing <br> - remark: Vaisala sensor was shortly powered with wrong polarity, but seems unharmed | 
 | 2025-12-02 | - removed PoE-setup, put back on regular powering <br> - started roof colocation measurement 14:15 UTC |
+| 2026-02-25 | - removed ethernet connection, connected to LTE WLAN Router on roof (details in/etc/wpa_supplicant/wpa_cupplicant.conf) <br> - implemented a wireguard monitoring script that documents time since last handshake and restarts wireguard if necessary (problem arised with the LTE Router and NAT-Timeouts that didn't recognise wireguard as traffic) <br> - reduced berkley rsinc interval (in crontab -e (without sudo/su rights)) to once/day to limit data traffic and activated a data usage documentation script that documents hourly up- and download traffic |
 
 ## Node 7
 | Date | Remark |
