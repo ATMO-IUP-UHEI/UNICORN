@@ -121,7 +121,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-07-03 | - installed LTE, fixed Wireguard <br> - changed Password -> **CO2unicorn2404** <br> - power off 11:28-12:55 UTC |
 | 2025-11-03 | - added functional ground (negative terminal from both power supplies seperately to casing ground) <br> - unplugged between 14:17 and 14:37 UTC |
 | 2026-01-21 | - Examining data usage (13 MB upload every hour) - suspect inefficient synchronising with Berkley <br> - suspected culprit: minutely executed rsync process in 'crontab -e' (no sudo, local beacon user) -> commented out to see effect <br> - data usage was reduced to 0.03 MB/ hr <br> - set rsync to only run once an hour | 
-| 2026-02-18 | - returned node 04 from Philosophenweg to IUP roof, power off 13:09 UTC <br> installed at roof: approx 14:20 UTC <br> - notes on Philosophenweg mounting/cable: cable length approx 15m, 2 unused sockets available, mounting with 48-51mm Rohrschelle (Phillips-Head Screwdriver for Rohrschelle, Imbus if Rohrschellenhalterung needs to be removed |
+| 2026-02-25 | - returned node 04 from Philosophenweg to IUP roof, power off 13:09 UTC <br> installed at roof: approx 14:20 UTC <br> - notes on Philosophenweg mounting/cable: cable length approx 15m, 2 unused sockets available, mounting with 48-51mm Rohrschelle (Phillips-Head Screwdriver for Rohrschelle, Imbus if Rohrschellenhalterung needs to be removed |
 
 
 
