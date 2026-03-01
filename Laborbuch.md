@@ -5,6 +5,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
+| Node 13    | OP     | 2026-03-01 |              | Seckenheim             |         |
 | Node 04    | CA     | 2026-02-25 | 2026-03-25   | IUP (roof)             | return from Philosophenweg for re-calibration |
 | Node 12    | CA     | 2026-02-18 | 2026-03-18   | IUP (roof)             | 24 V Setup with Brick in roof outlet |
 | Node 09    | CA     | 2026-01-22 |              | IUP(roof)              |         |
@@ -27,7 +28,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | Node 07    | CA     | 2025-07-10 | 2026-01-20   | IUP(roof)              |         |
 | Node 16    | CA     | 2025-07-10 | 2025-10-28   | IUP(roof)              |         |
 | Node 10    | OP     | 2025-06-21 |              | Collegium Academicum   |         |
-| Node 14    | OP     | 2025-05-25 |              | Seckenheim             |         |
+| Node 14    | OP     | 2025-05-25 | 2026-02-28   | Seckenheim             |         |
 | Node 12    | CA     | 2025-05-24 | 2025-09-17   | IUP(roof)              |         |
 | Node 08    | CA     | 2025-05-24 | 2025-09-08   | IUP(roof)              |         |
 | Node 13    | CA     | 2025-05-22 | 2025-09-01   | IUP(roof)              |         |
