@@ -6,12 +6,12 @@ CA = calibrating; OP = operational; LAB = laboratory
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
 | Node 13    | OP     | 2026-03-01 |              | Seckenheim             |         |
-| Node 04    | CA     | 2026-02-25 | 2026-03-25   | IUP (roof)             | return from Philosophenweg for re-calibration |
-| Node 12    | CA     | 2026-02-18 | 2026-03-18   | IUP (roof)             | 24 V Setup with Brick in roof outlet |
+| Node 04    | CA     | 2026-02-25 |              | IUP (roof)             | return from Philosophenweg for re-calibration |
+| Node 12    | CA     | 2026-02-18 |              | IUP (roof)             | 24 V Setup with Brick in roof outlet |
 | Node 09    | CA     | 2026-01-22 |              | IUP(roof)              |         |
 | Node 16    | CA     | 2026-01-22 |              | IUP(roof)              |         |
 | Node 07    | OP     | 2026-02-12 |              | Stadtkämmerei Mannheim |         |
-| Node 13    | CA     | 2026-01-22 | 2026-??-??   | IUP(roof)              |         |
+| Node 13    | CA     | 2026-01-22 | 2026-02-26   | IUP(roof)              |         |
 | Node 17    | OP     | 2025-12-12 |              | Kalmit                 |         |
 | Node 11    | OP     | 2025-12-10 |              | Universitätsbibliothek |         |
 | Node 18    | CA     | 2025-12-03 |              | IUP (roof)             |         | 
@@ -263,7 +263,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-12-19 | - stopped heating experiment, headlight turned off |
 | 2026-01-12| - end of heating experiment, node brought back to R234| 
 | 2026-01-21 | - started roof measurement, 15:00 UTC |
-| 2026-02-26 | - stopped roof measurement at around 14:00 UTC|
+| 2026-02-26 | - stopped roof measurement at around 14:25 UTC|
 | 2026-03-01 | - brought to Seckenheim (swap with node 14) and started measurement around 14:10 UTC |
 
 
