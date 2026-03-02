@@ -5,7 +5,10 @@ CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
+| Node 3     | OP     | 2026-03-02 |              | IUP (roof)             |         |
+| Node 14    | OP     | 2026-03-02 |              | IUP (roof)             |         |
 | Node 13    | OP     | 2026-03-01 |              | Seckenheim             |         |
+| Node 6     | OP     | 2026-02-27 |              | Eppelheim              |         |
 | Node 04    | CA     | 2026-02-25 |              | IUP (roof)             | return from Philosophenweg for re-calibration |
 | Node 12    | CA     | 2026-02-18 |              | IUP (roof)             | 24 V Setup with Brick in roof outlet |
 | Node 09    | CA     | 2026-01-22 |              | IUP(roof)              |         |
@@ -100,6 +103,9 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-05-12 | - connected node 3 to LAN at 08:30 CEST <br> - fixed cronjob typo <br> - changed password to new scheme (again?) -> **CO2unicorn2403** <br> - rebooted several times <br> - wpa_supplicant is mowked(?)|
 |2025-05-13 | - open node 18:20 CEST <br> -two reboots 19:00 & 19:10 CEST <br> - closed 19:20 CEST |
 |2025-06-29 | - exhanged power cable 09:10 UTC |
+|2026-02-27 | - removed from Eppelheim at 17:10 UTC |
+|2026-03-02 | - reglued Vaisala mounting |
+|2026-03-02 | - Installed at IUP roof at 11:50 UTC|
 
 ## Node 4
 | Date | Remark |
@@ -157,6 +163,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-12-02 | - removed PoE-setup, put back on regular powering <br> - started roof colocation measurement 14:15 UTC |
 | 2026-02-25 | - removed ethernet connection, connected to LTE WLAN Router on roof (details in/etc/wpa_supplicant/wpa_cupplicant.conf) <br> - implemented a wireguard monitoring script that documents time since last handshake and restarts wireguard if necessary (problem arised with the LTE Router and NAT-Timeouts that didn't recognise wireguard as traffic) <br> - reduced berkley rsinc interval (in crontab -e (without sudo/su rights)) to once/day to limit data traffic and activated a data usage documentation script that documents hourly up- and download traffic |
 | 2026-02-26 | - stopped roof measurement at around 14:00 UTC|
+| 2026-02-27 | - installed at Eppelheim at 17:30 UTC |
 
 
 ## Node 7
@@ -281,7 +288,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 |2025-05-25 | - checked data: weather data & PM missing/strange since Jan 2025 <br> - 14:30 UTC reboot <br> - 15:15 UTC power off, start repairs, change USB port <br> - 15:19 UTC power on, weather data looks normal -> for calibration use neighboring node (1 or 10) data |
 | 2025-05-16| - disconnected 12:38 UTC for Seckenheim installation |
 | 2026-03-01| - disconnected around 6:40 UTC at Seckenheim (swap with node 13) and brought to lab |
-
+| 2026-03-02 | - Installed at IUP roof at 11:50 UTC|
 
 ## Node 15
 | Date | Remark |
