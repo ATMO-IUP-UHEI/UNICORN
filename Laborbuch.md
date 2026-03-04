@@ -37,7 +37,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | Node 13    | CA     | 2025-05-22 | 2025-09-01   | IUP(roof)              |         |
 | Node 09    | CA     | 2025-05-20 | 2025-07-20   | IUP(roof)              |         |
 | Node 11    | CA     | 2025-04-24 | 2025-07-07   | IUP(roof)              |         |
-| Node 03    | OP     | 2025-04-18 |              | Eppelheim              |         |
+| Node 03    | OP     | 2025-04-18 | 2026-02-27   | Eppelheim              |         |
 | Node 04    | OP     | 2025-04-18 | 2026-02-25   | Philosophenweg         |         |
 | Node 10    | CA     | 2025-04-10 | 2025-06-19   | IUP(roof)              |         |
 | Node 14    | CA     | 2025-04-10 | 2025-05-15   | IUP(roof)              |         |
