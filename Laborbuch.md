@@ -163,7 +163,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-12-02 | - removed PoE-setup, put back on regular powering <br> - started roof colocation measurement 14:15 UTC |
 | 2026-02-25 | - removed ethernet connection, connected to LTE WLAN Router on roof (details in/etc/wpa_supplicant/wpa_cupplicant.conf) <br> - implemented a wireguard monitoring script that documents time since last handshake and restarts wireguard if necessary (problem arised with the LTE Router and NAT-Timeouts that didn't recognise wireguard as traffic) <br> - reduced berkley rsinc interval (in crontab -e (without sudo/su rights)) to once/day to limit data traffic and activated a data usage documentation script that documents hourly up- and download traffic |
 | 2026-02-26 | - stopped roof measurement at around 14:00 UTC|
-| 2026-02-27 | - installed at Eppelheim at 17:30 UTC |
+| 2026-02-27 | - installed at Eppelheim (Swap with node 3) at 17:30 UTC |
 
 
 ## Node 7
