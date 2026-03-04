@@ -5,8 +5,8 @@ CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
-| Node 3     | OP     | 2026-03-02 |              | IUP (roof)             |         |
-| Node 14    | OP     | 2026-03-02 |              | IUP (roof)             |         |
+| Node 3     | CA     | 2026-03-02 |              | IUP (roof)             |         |
+| Node 14    | CA     | 2026-03-02 |              | IUP (roof)             |         |
 | Node 13    | OP     | 2026-03-01 |              | Seckenheim             |         |
 | Node 6     | OP     | 2026-02-27 |              | Eppelheim              |         |
 | Node 04    | CA     | 2026-02-25 |              | IUP (roof)             | return from Philosophenweg for re-calibration |
