@@ -64,6 +64,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-11-25 | - noticed noisy CO2 data since 2025-11-17 -> refastened Vaisala Connection <br> noticed also that e-chem. mounting losened again (improvised double sided tape, fixed temporary, should be re-done permanently with good tape <br> - power off between 12:00 and 12:07 UTC |
 | 2025-12-02 | - noticed CO2 noise came back after one day <br> - re-fastened connector cautiosly as tight as possible with Wasserpumpenzange, works for now <br> - up and running since 07:50 UTC |
 | 2026-02-25 | - removed ethernet connection, connected to LTE WLAN Router on roof (details in/etc/wpa_supplicant/wpa_cupplicant.conf) <br> - implemented a wireguard monitoring script that documents time since last handshake and restarts wireguard if necessary (problem arised with the LTE Router and NAT-Timeouts that didn't recognise wireguard as traffic) <br> - reduced berkley rsinc interval to once/day to limit data traffic and activated a data usage documentation script that documents hourly up- and download traffic | 
+| 2026-03-10 | - switched to Ethernet-Connection via switch to LTE-Router (no NaT-Timeouts) <br> -noticed problem with RJ45-port on PI (only 100mbit/s, instable Wireguard-Tunnel), installed a USB-Ethernet adapter instead, seems to work |
 
 ## Node 2
 | Date | Remark |
