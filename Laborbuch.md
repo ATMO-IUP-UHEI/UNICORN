@@ -5,10 +5,10 @@ CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
-| Node 3     | CA     | 2026-03-02 |              | IUP (roof)             |         |
+| Node 03     | CA     | 2026-03-02 |              | IUP (roof)             |         |
 | Node 14    | CA     | 2026-03-02 |              | IUP (roof)             |         |
 | Node 13    | OP     | 2026-03-01 |              | Seckenheim             |         |
-| Node 6     | OP     | 2026-02-27 |              | Eppelheim              |         |
+| Node 06     | OP     | 2026-02-27 |              | Eppelheim              |         |
 | Node 04    | CA     | 2026-02-25 |              | IUP (roof)             | return from Philosophenweg for re-calibration |
 | Node 12    | CA     | 2026-02-18 |              | IUP (roof)             | 24 V Setup with Brick in roof outlet |
 | Node 09    | CA     | 2026-01-22 |              | IUP(roof)              |         |
@@ -18,7 +18,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | Node 17    | OP     | 2025-12-12 |              | Kalmit                 |         |
 | Node 11    | OP     | 2025-12-10 |              | Universitätsbibliothek |         |
 | Node 18    | CA     | 2025-12-03 |              | IUP (roof)             |         | 
-| Node 06    | CA     | 2025-12-03 |              | IUP(roof)              |         |
+| Node 06    | CA     | 2025-12-03 |  2026-02-26  | IUP(roof)              |         |
 | Node 15    | OP     | 2025-11-04 |              | Philosophenweg         |         |
 | Node 16    | LAB    | 2025-10-29 | 2026-01-12   | IUP(lab)               |         |
 | Node 08    | OP     | 2025-10-03 |              | Pumpwerk Sandhofen     |         |
