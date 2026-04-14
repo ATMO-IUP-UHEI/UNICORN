@@ -13,7 +13,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | Node 04    | CA     | 2026-02-25 |              | IUP (roof)             | return from Philosophenweg for re-calibration |
 | Node 12    | CA     | 2026-02-18 |              | IUP (roof)             | 24 V Setup with Brick in roof outlet |
 | Node 09    | CA     | 2026-01-22 |              | IUP(roof)              |         |
-| Node 16    | CA     | 2026-01-22 |              | IUP(roof)              |         |
+| Node 16    | CA     | 2026-01-22 | 2026-04-14   | IUP(roof)              |         |
 | Node 07    | OP     | 2026-02-12 |              | Stadtkämmerei Mannheim |         |
 | Node 13    | CA     | 2026-01-22 | 2026-02-26   | IUP(roof)              |         |
 | Node 17    | OP     | 2025-12-12 |              | Kalmit                 |         |
@@ -317,6 +317,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-11-05 | - plug in nodes 13 & 16 for further temperature experiments, 09:25 UTC |
 | 2026-01-12| - end of heating experiment, node brought back to R234|
 | 2026-01-21 | - installed at IUP Roof, 14:59 UTC |
+| 2026-04-14 | - taken down from roof and prepared for MVV Hochhaus installation <br> - disconnected 11:16 UTC |
 
 ## Node 17
 | Date | Remark |
