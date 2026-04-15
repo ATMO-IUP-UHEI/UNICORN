@@ -5,6 +5,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
+| Node 16    | OP     | 2026-04-15 |              | MVV Hochhaus            |        |
 | Node 12    | OP     | 2026-03-20 |              | Hochschule Mannheim    | 24V Setup |
 | Node 03     | CA     | 2026-03-02 |              | IUP (roof)             |         |
 | Node 14    | CA     | 2026-03-02 |              | IUP (roof)             |         |
@@ -318,6 +319,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2026-01-12| - end of heating experiment, node brought back to R234|
 | 2026-01-21 | - installed at IUP Roof, 14:59 UTC |
 | 2026-04-14 | - taken down from roof and prepared for MVV Hochhaus installation <br> - disconnected 11:16 UTC |
+| 2026-04-15 | - deployed at MVV Hochhaus, power on 09:38 UTC <br> notes on mounting: <br> - approx 12m of cable needed <br> - mounted via pipe clamps (48-51mm, very far tightened, so maybe less then 48mm fits aswell) <br> - use medium sized phillips-head screwdiver for tightening pipe clamps and big Imbus to interchange clamps on mounting <br> - bring small phillips head screwdiver to access LTE Box (non-standardized model) |
 
 ## Node 17
 | Date | Remark |
