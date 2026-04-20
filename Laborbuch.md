@@ -5,6 +5,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
+| Node 09    | OP     | 2026-04-21 |              | Stadtbücherei          |          |
 | Node 16    | OP     | 2026-04-15 |              | MVV Hochhaus            |        |
 | Node 12    | OP     | 2026-03-20 |              | Hochschule Mannheim    | 24V Setup |
 | Node 03     | CA     | 2026-03-02 |              | IUP (roof)             |         |
@@ -204,6 +205,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2026-01-14 | - we were notified, that the FI (safety fuse) on the Stadtbücherei Roof station was blown on January 08 <br> - de-installed node 09 on January 14th for an internal inspection <br> - result: node is flawless, issue most probably the outdoor power socket at Stadtbücherei (not 100% waterproof if cable is connected). |
 | 2026-01-21 | - installed at IUP Roof, 14:59 UTC |
 | 2026-04-16 | - taken down from roof and prepared for re-deployment at Stadtbücherei <br> - power off 11:16 UTC |
+| 2026-04-20 | - re-installed at Stadtbücherei, Power on 08:21 UTC <br> - installed Wetterschutz with LKW-Plane on Außensteckdose to prevent new FI issues |
 
 ## Node 10
 | Date | Remark |
