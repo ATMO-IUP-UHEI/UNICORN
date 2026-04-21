@@ -230,6 +230,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 |2025-05-19 | - noticed problems (node not running) <br> - 11:30 disconnected <br> - 11:33 tried different outlets <br> - 11:35 restart measurement|
 | 2025-07-08 | - unplugged 07:35 UTC, installed at UB, yet without power connection (to be done by electrician) |
 | 2025-12-09 | - power connection established |
+| 2026-04-21 | - no data synchronization since Janary 2026. Visit in Place to check on error: Could be resolved by unplugging and re-plugging the LTE Stick. <br> - wrote an automated scipt (watch_lte.sh) that checks for connection via ping. If no connection is possible, first the usb0 interface is restartet, after that if there is still no connection the USB device is restartet (via usbreset, corresponds to re-plugging) |
 
 
 ## Node 12
