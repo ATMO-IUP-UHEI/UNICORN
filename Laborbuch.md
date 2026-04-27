@@ -5,28 +5,28 @@ CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
-| Node 09    | OP     | 2026-04-21 |              | Stadtbücherei          |          |
-| Node 16    | OP     | 2026-04-15 |              | MVV Hochhaus            |        |
+| Node 09    | OP     | 2026-04-21 |              | Stadtbücherei          |         |
+| Node 16    | OP     | 2026-04-15 |              | MVV Hochhaus           |         |
 | Node 12    | OP     | 2026-03-20 |              | Hochschule Mannheim    | 24V Setup |
-| Node 03     | CA     | 2026-03-02 |              | IUP (roof)             |         |
-| Node 14    | CA     | 2026-03-02 |              | IUP (roof)             |         |
+| Node 03    | CA     | 2026-03-02 |              | IUP(roof)              |         |
+| Node 14    | CA     | 2026-03-02 |              | IUP(roof)              |         |
 | Node 13    | OP     | 2026-03-01 |              | Seckenheim             |         |
-| Node 06     | OP     | 2026-02-27 |              | Eppelheim              |         |
-| Node 04    | CA     | 2026-02-25 |              | IUP (roof)             | return from Philosophenweg for re-calibration |
-| Node 12    | CA     | 2026-02-18 |              | IUP (roof)             | 24 V Setup with Brick in roof outlet |
-| Node 09    | CA     | 2026-01-22 |              | IUP(roof)              |         |
+| Node 06    | OP     | 2026-02-27 |              | Eppelheim              |         |
+| Node 04    | CA     | 2026-02-25 |              | IUP(roof)              | return from Philosophenweg for re-calibration |
+| Node 12    | CA     | 2026-02-18 | 2026-03-19   | IUP(roof)              | 24 V Setup with Brick in roof outlet |
+| Node 09    | CA     | 2026-01-22 | 2026-04-15   | IUP(roof)              |         |
 | Node 16    | CA     | 2026-01-22 | 2026-04-14   | IUP(roof)              |         |
 | Node 07    | OP     | 2026-02-12 |              | Stadtkämmerei Mannheim |         |
 | Node 13    | CA     | 2026-01-22 | 2026-02-26   | IUP(roof)              |         |
 | Node 17    | OP     | 2025-12-12 |              | Kalmit                 |         |
 | Node 11    | OP     | 2025-12-10 |              | Universitätsbibliothek |         |
-| Node 18    | CA     | 2025-12-03 |              | IUP (roof)             |         | 
+| Node 18    | CA     | 2025-12-03 |              | IUP(roof)              |         | 
 | Node 06    | CA     | 2025-12-03 |  2026-02-26  | IUP(roof)              |         |
 | Node 15    | OP     | 2025-11-04 |              | Philosophenweg         |         |
 | Node 16    | LAB    | 2025-10-29 | 2026-01-12   | IUP(lab)               |         |
 | Node 08    | OP     | 2025-10-03 |              | Pumpwerk Sandhofen     |         |
 | Node 17    | CA     | 2025-09-19 | 2025-12-08   | IUP(roof)              |         |
-| Node 12    | LAB    | 2025-09-17 |              | IUP(lab)               |         |
+| Node 12    | LAB    | 2025-09-17 | 2026-02-17   | IUP(lab)               |         |
 | Node 13    | LAB    | 2025-09-12 | 2026-01-20   | IUP(lab)               |         |
 | Node 05    | CA     | 2025-09-03 |              | IUP(roof)              |         |
 | Node 15    | CA     | 2025-09-03 | 2025-10-28   | IUP (roof)             |         |
@@ -44,7 +44,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | Node 04    | OP     | 2025-04-18 | 2026-02-25   | Philosophenweg         |         |
 | Node 10    | CA     | 2025-04-10 | 2025-06-19   | IUP(roof)              |         |
 | Node 14    | CA     | 2025-04-10 | 2025-05-15   | IUP(roof)              |         |
-| Node 05    | CA     | 2025-02-19 | 2025-06-11   | IUP (roof)             | strong Co2-crosssensitivities, CO2-sensor was sent in to Vaisala |
+| Node 05    | CA     | 2025-02-19 | 2025-06-11   | IUP (roof)             | strong CO2-crosssensitivities, CO2-sensor was sent in to Vaisala |
 | Node 02    | OP     | 2025-02-19 |              | Czernyring             |         |
 | Node 03    | CA     | 2025-02-19 | 2025-04-08   | IUP(roof)              |         |
 | Node 04    | CA     | 2025-02-06 | 2025-04-08   | IUP(roof)              |         |
