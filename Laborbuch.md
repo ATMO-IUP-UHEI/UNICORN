@@ -307,6 +307,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-10-29 | - removed from roof 10:22 UTC |
 | 2025-11-03 | - setup for co-location at OPI (radiation effects, noise reduction tests) <br> - plug in 14:37 UTC |
 | 2026-02-25 | - switched with node 4 to stay at Philosophenweg while node 4 is re-calibrated, short power off between 13:09 and 13:33 UTC <br> - notes on Philosophenweg mounting/cable: cable length approx 15m, 2 unused sockets available, mounting with 48-51mm Rohrschelle (Phillips-Head Screwdriver for Rohrschelle, Imbus if Rohrschellenhalterung needs to be removed | 
+| 2026-05-06 | - noticed no data transfer since end of april <br> -checked device, only LTE stick froze, Re-Plug did solve problem <br> - installed lte watchdog (once/day check and restart usb interface if needed), see node 11 for reference |
 
 
 ## Node 16
