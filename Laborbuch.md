@@ -5,6 +5,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
+| Node 05    | LAB    | 2026-05-27 |              | IUP(lab)               | In workshop to build weather-protection |
 | Node 09    | OP     | 2026-04-21 |              | Stadtbücherei          |         |
 | Node 16    | OP     | 2026-04-15 |              | MVV Hochhaus           |         |
 | Node 12    | OP     | 2026-03-20 |              | Hochschule Mannheim    | 24V Setup |
