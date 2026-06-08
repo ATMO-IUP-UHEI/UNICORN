@@ -5,6 +5,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 
 | Station_ID | Status | Start_Time | End_Time     | Location               | Comment |
 |------------|--------|------------|--------------|------------------------|---------|
+| Node 04    | OP     | 2026-06-05 |              | OPI                    | Installed ferrit elemnts to see if noise can be dampened |
 | Node 09    | OP     | 2026-04-21 |              | Stadtbücherei          |         |
 | Node 16    | OP     | 2026-04-15 |              | MVV Hochhaus           |         |
 | Node 12    | OP     | 2026-03-20 |              | Hochschule Mannheim    | 24V Setup |
@@ -12,7 +13,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | Node 14    | CA     | 2026-03-02 |              | IUP(roof)              |         |
 | Node 13    | OP     | 2026-03-01 |              | Seckenheim             |         |
 | Node 06    | OP     | 2026-02-27 |              | Eppelheim              |         |
-| Node 04    | CA     | 2026-02-25 |              | IUP(roof)              | return from Philosophenweg for re-calibration |
+| Node 04    | CA     | 2026-02-25 | 2026-06-01   | IUP(roof)              | return from Philosophenweg for re-calibration |
 | Node 12    | CA     | 2026-02-18 | 2026-03-19   | IUP(roof)              | 24 V Setup with Brick in roof outlet |
 | Node 09    | CA     | 2026-01-22 | 2026-04-15   | IUP(roof)              |         |
 | Node 16    | CA     | 2026-01-22 | 2026-04-14   | IUP(roof)              |         |
@@ -133,6 +134,8 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-11-03 | - added functional ground (negative terminal from both power supplies seperately to casing ground) <br> - unplugged between 14:17 and 14:37 UTC |
 | 2026-01-21 | - Examining data usage (13 MB upload every hour) - suspect inefficient synchronising with Berkley <br> - suspected culprit: minutely executed rsync process in 'crontab -e' (no sudo, local beacon user) -> commented out to see effect <br> - data usage was reduced to 0.03 MB/ hr <br> - set rsync to only run once an hour | 
 | 2026-02-25 | - returned node 04 from Philosophenweg to IUP roof, power off 13:09 UTC <br> installed at roof: approx 14:20 UTC <br> - notes on Philosophenweg mounting/cable: cable length approx 15m, 2 unused sockets available, mounting with 48-51mm Rohrschelle (Phillips-Head Screwdriver for Rohrschelle, Imbus if Rohrschellenhalterung needs to be removed |
+| 2026-06-01 | - Remonved Node 04 from roof, unplug 09:09 UTC <br> - extended cables and wrapped through ferrit cores close to raspberry Pi and Vaisala electricity inputs; installed "Klappferrite" on USB cables (LTE-Stick, close to PI; el-chem sensors close to board; Vaisala data cable close to sensor) <br> - also removed unnecessary US Antenna |
+| 2026-06-05 | - Installed at Philsophenweg on portable mount, plugin 11:50 UTC |
 
 
 
@@ -156,6 +159,8 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-10-02 | - noticed missing data for nodes 5 and 17 between Sept 22 and Oct 2nd <br> reason: blown fuse of rooftop electricity supply box (already occured twice with this outlet a few months earlier, noted in fuse cabinet logbook)|
 | 2025-10-29 | - disabled Wi-Fi (via dtoverlay=disable_wifi entry in /boot/config.txt - comment out to re-activate) to see if there is an effect on noise, reboot 15:00 UTC | 
 | 2026-02-25 | - re-activated wifi for roof measurements, didn't seem to have a strong noise impact <br> - removed ethernet connection, connected to LTE WLAN Router on roof (details in/etc/wpa_supplicant/wpa_cupplicant.conf) <br> - implemented a wireguard monitoring script that documents time since last handshake and restarts wireguard if necessary (problem arised with the LTE Router and NAT-Timeouts that didn't recognise wireguard as traffic) <br> - reduced berkley rsinc interval to once/day to limit data traffic and activated a data usage documentation script that documents hourly up- and download traffic |
+| 2026-05-27 | - removed from roof and taken to workshop to test white paint/ sun shielding <br> - unplug 11:00 UTC |
+| 2026-06-08 |- reinstalled on roof with white painted original housing <br> - further changes: Sebastian Gehring changed the Raspberry Pi mounting to be screwed and made a "Zugentlastung" for the Ethernet cord <br> - power on 14:38 UTC |
 
 ## Node 6
 | Date | Remark |
@@ -308,6 +313,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-11-03 | - setup for co-location at OPI (radiation effects, noise reduction tests) <br> - plug in 14:37 UTC |
 | 2026-02-25 | - switched with node 4 to stay at Philosophenweg while node 4 is re-calibrated, short power off between 13:09 and 13:33 UTC <br> - notes on Philosophenweg mounting/cable: cable length approx 15m, 2 unused sockets available, mounting with 48-51mm Rohrschelle (Phillips-Head Screwdriver for Rohrschelle, Imbus if Rohrschellenhalterung needs to be removed | 
 | 2026-05-06 | - noticed no data transfer since end of april <br> -checked device, only LTE stick froze, Re-Plug did solve problem <br> - installed lte watchdog (once/day check and restart usb interface if needed), see node 11 for reference |
+| 2026-06-05 | - installed Klappferrite on USB Data Cables (LTE Antenna; Vaisala data connection next to sensor; El-Chem. sensors usb cable next to board) to see wether noise effects can also be damped by simple klappferrit-installation <br> - also removed US Antenna <br> - short power off/on around 11:50 to 12:00 UTC |
 
 
 ## Node 16
@@ -342,3 +348,4 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-01-09    | - brought node 6-18 to workshop for refurbishment (power plug, ethernet feed-through, RPI isolation and mounting, power supply mounting, case grounding)   | 
 | 2025-04-08    | - borught up nodes 9,12,13,16,18 <br> - configuration with connected minus terminals  |   
 |2025-12-02 | Installed Vaisala Sensor with Ser.-No. W3510003 <br> - - changed **password -> CO2unicorn2418** via temporary fix: <br> added * echo 'beacon:CO2unicorn2418'|chpasswd* in /etc/rc.local <br> frshly sets the password during each boot <br> - succesfully installed wireguard <br> - started co-location measurement 14:15 UTC| 
+| 2026-06-08 | - installed sun shading prototype from workshop <br> -taken down from roof 12:52 UTC to 14:03 UTC |
