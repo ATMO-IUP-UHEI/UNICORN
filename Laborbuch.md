@@ -111,6 +111,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 |2026-02-27 | - removed from Eppelheim at 17:10 UTC |
 |2026-03-02 | - reglued Vaisala mounting |
 |2026-03-02 | - Installed at IUP roof at 11:50 UTC|
+| 2026-06-17 | - taken down from roof, brought to workshop as example for building a set of pipe clamp mountings <br> - possibly seen as rotational device for Czernyring re-setup <br> - power off 09:33 UTC |
 
 ## Node 4
 | Date | Remark |
