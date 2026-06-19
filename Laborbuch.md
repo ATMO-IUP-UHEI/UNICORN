@@ -84,6 +84,8 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-02-18 | - fixed conf file for wireguard connection <br> - mounted at Czernyring ~11UTC <br> - fixed IP (.32) <br> - weatherproof extension cable used|
 |2025-03-12| - check data usage: installed vnstet on Node 2 -> 1MB/5min ? <br> -> data usage is around: daemon -> network communication (wouldn't be the case for LTE)|
 |2025-04-22 | - changed pwd to new scheme -> **CO2unicorn2402** |
+| 2026-06-19 | - relocated on Czernyring Site from balcony to roof weather mast <br> - power off 7:43 to 10:23 <br> - mounting details: Pipe Clamps 108-114mm; well-accessible via small roof; bring very big Phillips Head Screwer for pipe Clamp losening and Medium and Large Size Imbus if pipe clamp mounting has to be replaced; cable is fitted through wall feed-through can only be removed if SchuKo plug is cut off |
+
 
 ## Node 3
 | Date | Remark |
@@ -112,6 +114,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 |2026-03-02 | - reglued Vaisala mounting |
 |2026-03-02 | - Installed at IUP roof at 11:50 UTC|
 | 2026-06-17 | - taken down from roof, brought to workshop as example for building a set of pipe clamp mountings <br> - possibly seen as rotational device for Czernyring re-setup <br> - power off 09:33 UTC |
+| 2026-06-16 | - took node 3 to lab for pipe clamp mounting production and Eppelheim exchange soon |
 
 ## Node 4
 | Date | Remark |
