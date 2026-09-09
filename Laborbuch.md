@@ -10,7 +10,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | Node 16    | OP     | 2026-04-15 |              | MVV Hochhaus           |         |
 | Node 12    | OP     | 2026-03-20 |              | Hochschule Mannheim    | 24V Setup |
 | Node 03    | CA     | 2026-03-02 |              | IUP(roof)              |         |
-| Node 14    | CA     | 2026-03-02 |              | IUP(roof)              |         |
+| Node 14    | CA     | 2026-03-02 | 2026-09-08   | IUP(roof)              |         |
 | Node 13    | OP     | 2026-03-01 |              | Seckenheim             |         |
 | Node 06    | OP     | 2026-02-27 |              | Eppelheim              |         |
 | Node 04    | CA     | 2026-02-25 | 2026-06-01   | IUP(roof)              | return from Philosophenweg for re-calibration |
@@ -306,6 +306,7 @@ CA = calibrating; OP = operational; LAB = laboratory
 | 2025-05-16| - disconnected 12:38 UTC for Seckenheim installation |
 | 2026-03-01| - disconnected around 6:40 UTC at Seckenheim (swap with node 13) and brought to lab |
 | 2026-03-02 | - Installed at IUP roof at 11:50 UTC|
+| 2026-09-09 | - removed Node 14 from roof for re-deployment in Seckenheim, unplug 09:14 UTC |
 
 ## Node 15
 | Date | Remark |
